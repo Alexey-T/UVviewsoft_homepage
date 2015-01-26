@@ -27,7 +27,7 @@ PRE {
 }
 
 #head {
-	background: transparent url("../images/logo.gif") no-repeat left center;
+	background: transparent url("images/logo.gif") no-repeat left center;
 	background-position: 70px 3px;
 	text-align: left;
 	padding: 0px 0 0 170px;
