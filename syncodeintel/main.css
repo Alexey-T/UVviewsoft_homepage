@@ -1,0 +1,157 @@
+body
+{
+font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+font-size: 0.8em;
+background: #FFF;
+}
+
+table.adv
+{
+border: 0px;
+border-collapse: collapse;
+background: #AAA;
+}
+
+table.main
+{
+border: 2px #CCC solid;
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 0px;
+background: #FFF;
+}
+
+table.noborder
+{
+border: 0px;
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 0px;
+background: #FFF;
+}
+
+td.title_app
+{
+font-size: 1.9em;
+font-weight: bold;
+color: #55B;
+}
+
+td.title_delphi
+{
+font-size: 1.5em;
+font-weight: bold;
+color: #338;
+}
+
+td.pad
+{
+border: 2px #CCC solid;
+padding: 0px;
+}
+
+td.caption_app
+{
+font-size: 1em;
+font-weight: bold;
+color: #FFF;
+background-color: #77E;
+text-align: center;
+}
+
+td.caption_delphi
+{
+font-size: 1em;
+font-weight: bold;
+color: #FFF;
+background-color: #66A;
+text-align: center;
+}
+
+td.caption_main
+{
+font-size: 1em;
+font-weight: bold;
+}
+
+td.ad
+{
+text-align: left;
+vertical-align: top;
+font-size: 0.6em;
+background-color: #EEE;
+height: 48px;
+padding-left: 4px;
+}
+
+a.ad
+{
+color: #444;
+}
+
+td.text, td.sel
+{
+font-size: 0.8em;
+padding-left: 8px;
+padding-right: 4px;
+}
+
+td.sel
+{
+background-color: #DDD;
+}
+
+td.pre
+{
+font-size: 0.7em;
+background-color: #EEE;
+}
+
+hr
+{
+border: 0;
+color: #CCC;
+background-color: #CCC;
+height: 1px;
+text-align: center;
+}
+
+hr.short
+{
+width: 90%;
+}
+
+li
+{
+margin-bottom: 2px;
+}
+
+ul.apps
+{
+list-style-type: none;
+padding: 0px; /* Firefox */
+margin-left: 16px;
+}
+
+img
+{
+border: 0;
+vertical-align: middle;
+}
+
+img.shot
+{
+margin-bottom: 4px;
+}
+
+.blue
+{
+font-weight: bold;
+color: #33A;
+}
+
+a.title
+{
+color: #55B;
+text-decoration: none;
+}
