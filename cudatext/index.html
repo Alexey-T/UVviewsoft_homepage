@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="" />
+	<meta name="keywords" content="CudaText, Code, Text, Editor" />
+	<meta name="description" content="CudaText Editor" />
+	<meta name="robots" content="all" />
+	<title>CudaText - Home</title>
+	<link rel="SHORTCUT ICON" href="favicon.ico">
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="body">
+  <div id="head">
+	  <h1>CudaText</h1>
+	  <h2>Cross-platform code editor</h2>
+  </div>
+  <div id="menu">
+	  <a href="index.html">Home</a>
+	  <a href="download.html">Download</a>
+	  <a href="http://synwrite.sourceforge.net/forums" target="_blank">Forum</a>
+  </div>
+
+  <div id="content">
+    <div class="section">
+      <br>
+      <b>CudaText</b> is a cross-platform text editor, written in Lazarus.
+      <br><br>
+      Features include:
+      <ul>
+      <li> Syntax highlight for many languages: C, C++, Java, Pascal, JavaScript, HTML, CSS, PHP, Python, XML... totally about 140 lexers exist.
+      <li> Code folding.
+      <li> Multi-carets, multi-selections.
+      <li> Find/replace with regex.
+      <li> Command palette like ST3.
+      <li> Text configs like ST3.
+      </ul> 
+
+      <br>
+      <center>
+      <a href="img/cudatext1.png"> <img src="img/cudatext1.png" width="400"> </a>
+      <br><br>
+      <a href="img/cudatext2.png"> <img src="img/cudatext2.png" width="400"> </a>
+      <br><br>
+      <a href="img/lexer1.png"> <img src="img/lexer1.png" width="300"> </a>
+      <br><br>
+      <a href="img/lexer2.png"> <img src="img/lexer2.png" width="300"> </a>
+      </center>
+      <p>
+
+      <br>
+      <h2>Configs</h2>
+      <br>
+      <ul>
+      <li> It has config system like ST3 editor: call "Settings-default" and you see default config. Copy any lines to config "Settings-user" and edit lines in user config. Config in JSON. 
+      <li> Lexer-override config: settings for single lexer only. E.g., you open Pascal file, config "lexer Pascal.json" is read after "user.json" config. 
+      <li> File-types config: specify in it mapping between file types (name or extension) and lexer names. Such mapping exists in lexer-library, this config overrides it. 
+      </ul>
+      
+    </div>
+  </div>
+  <br>
+  <div class="footer" align=right>Copyright &copy; UVViewSoft</div>
+</div>
+</body>
+</html>

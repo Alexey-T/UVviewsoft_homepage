@@ -20,13 +20,13 @@ table tbody tr td a {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  color: #eeeeee;
+  color: #707070;
   }
   
 .footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 30px;
   width: 100%;
 }
