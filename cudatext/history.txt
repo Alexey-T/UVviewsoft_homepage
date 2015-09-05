@@ -1,4 +1,12 @@
 
+0.6.2
++ keys config: in "Help-Commands" dlg press F9
+* new format of str-lists in history.json
+
+0.6.1
++ auto-complete: CSS support
++ menuitem "Help-Wiki"
+
 0.6.0
 + support of Synwrite autocomplete .acp files. Synwrite files added.
 + cmd auto-complete Ctrl+Space
