@@ -1,4 +1,8 @@
 
+0.6.4
++ autocomplete: HTML support
++ autocomplete: php list looks nicer; works for lexer php_
+
 0.6.2
 + keys config: in "Help-Commands" dlg press F9
 * new format of str-lists in history.json
