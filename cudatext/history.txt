@@ -1,4 +1,23 @@
 
+0.7.0
++ syntax tree (F12)
++ gutter foldbar menu: "fold all", "unfold all", "fold level"
++ tab menu: new palette dialog
++ bookmks save in history
++ export to HTML
++ opt under_color
++ opt under_color_size
++ opt ui_tree_auto_sync
++ opt ui_tree_time_fill
++ opt ui_tree_time_focus
+* opt ui_initial_dir is renamed
++ opt export_html_*
++ cmd "fold level"
++ cmd "menu: lexers"
++ cmd "menu: encodings"
++ cmd "menu: line ends"
+- fix change encoding
+
 0.6.4
 + autocomplete: HTML support
 + autocomplete: php list looks nicer; works for lexer php_
@@ -77,7 +96,7 @@
 
 0.4.0
 + filetypes.json, see readme dir
-+ drapdrop to window
++ drag-drop to window
 + dlg "Find" btn alt+keys
 + tab popup: "Save" item
 - fix Bksp with selectn
