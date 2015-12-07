@@ -4,6 +4,15 @@ Legend:
  * changed
 
 
+6.19.2150
+
++ macros dlg: import/export macros
+* remove submenu for "Set tab color" in tab context menu(only show dlg), remove tab-color opts
+- fix: nasty edits in Sort dlg
+- fix: replace-all with Unicode text (Rus) with case-insensitive
+* change readme/*.rar to .zip
+* remove some Delphi libs (fastmm, fastcode)
+
 6.18.2130
 
 + lexer css: hiliting of ":after"
