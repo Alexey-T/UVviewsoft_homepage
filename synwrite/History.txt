@@ -4,6 +4,20 @@ Legend:
  * changed
 
 
+6.19.2165
+
+* lexers HTML/HTML_/PHP/PHP_: rename, old pair removed to AddonManager
+* lexer NSIS removed to AddonManager
+* item "Web search" moved to "Tools"
+* item "Help- Browse py folder" removed
++ api (on_click)
+
+6.19.2155
+
++ font "menus" used also for menu-dialogs (commands, snippets, plugin manager, goto proj file, tab switcher)
+- fix window pos if 2nd monitor removed (prev pos on 2nd monitor) 
+- fix Json tree
+
 6.19.2150
 
 + macros dlg: import/export macros
@@ -932,8 +946,8 @@ minor:
 
 5.2.250
 + dialog "Favorites" reworked
-+ added main menu button "«|»", which toggles visibility of 2nd view (also added shotrcut)
-+ Find dialog: added item in "»?" menu to toggle regex option "(?s)"
++ added main menu button "?|?", which toggles visibility of 2nd view (also added shotrcut)
++ Find dialog: added item in "??" menu to toggle regex option "(?s)"
 * removed initial visibility of editor's horz splitter. Now, to split editor, use tab header's popup menu.
 + project files may have extension "synw-proj" too
 + help: FAQ item "How to copy program settings"
@@ -1029,8 +1043,8 @@ minor:
 4.9.840
 + syntax-aware spell checking - help topic added in "Coding helpers"
 + spelling red marks are shown on micro-map
-+ Find dialog: multiline view added, click '»Multiline' or press F2
-+ Find dialog: regex help '»?' reworked
++ Find dialog: multiline view added, click '?Multiline' or press F2
++ Find dialog: regex help '??' reworked
 + Find dialog: help topic added
 + option "Files -- Suggest to save unicode content in unicode format"
 + option "Misc -- Show recent colors menu"

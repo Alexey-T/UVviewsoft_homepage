@@ -1,4 +1,82 @@
 
+1.2.14
++ selection keeps bold/italic of selected words
++ redone plugin "Make Plugin"
+* lexers HTML/HTML_/PHP/PHP_: rename, old pair removed to Addon Manager
++ opt autocomplete_html
++ opt autocomplete_css
+* opts deleted: under_color, under_color_size
++ opts added: underline_color_files, underline_color_size 
+- fix: caret at bad coord
+- fix: must unfold found text
+- fix: sort must set "modified"
+- fix: Html autocomplete in Html part of Php
+
+1.2.12
++ api (log panels api, splitters api)
+* removed lexers NSIS, Inno: to Addon Manager
+
+1.2.11
++ addon-manager: config dlg (restart to see item); common install dlg; no more using of Synwrite wiki
++ "undo" undoes also "*" mark
++ api (better support for ExtTools)
+
+1.2.10
++ addon-manager: items "Install plugin","Download all" (restart app 1-2 times to see menuitems)
++ opt ui_lexers_grouped
++ opt ui_reload_tail
++ add cmds "tree: select next/prev/parent/etc node"
++ add cmd "tree: update tree" (need if sidebar hidden)
++ use grouped-undo for mul-carets cmds
+
+1.2.9
+* removed cmd "search - go to tab" (better doable in plugin)
+* change: color-attrib api (pls update plugins BracketsHilite, HiliteOccurrences)
+* change: limit key-combo len to 3
++ improve dialog api
++ improve cmd "reset Python plugins"
+- small fixes
+
+1.2.8
++ custom-dialog api
++ dlg "Goto tab" shows paths
++ output panel has hotkeys (wiki help topic)
++ console: char ";" at end of cmd: don't log
+- fix on pasting n lines at line-end
+- fix replace regex "$"
+
+1.2.5
++ support for Macros plugin
++ theme "green"
++ cmd "convert tabs to spaces"
++ cmd "convert spaces (leading) to tabs"
++ files in session must not update recents
+- fix: json tree (e.g. file menu.json)
+- fix: grouped undo
+
+1.2.0:
++ commands for markers like Synwrite
++ support for Snippets plugin
++ opt ui_non_text (prompt/ open/ don't open)
++ opt ui_non_text_buffer
++ cmd "run last command plugin"
+- fix: ui_one_instance and non-text prompt
+
+1.1.0
+* changed format of keys.json (old fields read but not saved)
++ plugins have hotkeys like all cmds: Commands dlg allows to change plugin keys. Saved in keys.json.
++ history saves folded-state
++ cmd "fold range at current line"
++ cmd "unfold range at current line"
++ cmd "goto next bookmark": from last goto first
++ color for "fold mark border"
+
+1.0.2
++ opt ui_tab_numbers
++ cmd "Edit--Char map"
++ cmd "reset python plugins" (like Synwrite)
++ plugins.json can have "menu":false key to hide Plugins menu item
+
 1.0.0
 + opt ui_notif_* (notification for file change)
 + opt comment_equal_column
