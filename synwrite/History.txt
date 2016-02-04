@@ -4,6 +4,26 @@ Legend:
  * changed
 
 
+6.20.2190
+
++ api (on_click_dbl)
++ better lex Makefile
+- fix: must keep bookmarks on replace-all
+
+6.20.2185
+
++ grouping mode "1+2 horz"
++ redone lexer Makefile (for GNU makefile)
+* rename menuitems "block comment"--"line comment"
+- fix: on_click must be on mouse-up
+- fix: tab "+" position for empty grp
+
+6.19.2170
+
+- fix: scaling of tabs for high-dpi
+- fix: max-tab-width now 600
+- fix: err on 150+ tabs
+
 6.19.2165
 
 * lexers HTML/HTML_/PHP/PHP_: rename, old pair removed to AddonManager
