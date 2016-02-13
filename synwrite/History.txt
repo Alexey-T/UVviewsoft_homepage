@@ -3,6 +3,11 @@ Legend:
  - fixed
  * changed
 
+6.20.2195
+
++ new "Tab color" dialog for tab context menu
++ upd SynFTP, thanks tbeu
+* changed "Save tabs" dialog
 
 6.20.2190
 

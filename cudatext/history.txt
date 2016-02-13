@@ -3,11 +3,26 @@ Legend:
   - fixed
   * changed
 
-1.2.20
+1.2.22
++ toolbar api
++ add ui_statusbar_panels panel "ins" (hidden by default)
++ add bottom pane "Search Res", for future
+- fix Qt build: Esc key in find/goto
+- fix: must set modified on conv-encoding
 
+1.2.21
++ opt micromap_show
++ opt micromap_width
++ opt autocomplete_autoshow_chars
++ opt autocomplete_autoshow_lexers
+- autocomplete now ignores case
++ improve picture mode
++ changed "Save tabs" dlg buttons (same look Win/Linux)
+
+1.2.20
 + can open pictures: bmp/png/jpg/ico
 * statusbar: remove macros {caret_line_nnn}, add {y2}
-* remove opt ui_tab_indent_x (center text)
+* remove opt ui_tab_indent_y (center text)
 
 1.2.19
 + better support for CudaLint (new plugin)
