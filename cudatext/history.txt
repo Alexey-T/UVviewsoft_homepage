@@ -3,6 +3,28 @@ Legend:
   - fixed
   * changed
 
+
+1.2.25.2
+- fix major issue: lexerlib breaks on installing addon (reason: FPC 3)
+- fix cmds for line-comment
++ allow trailing comma in user.json
+
+1.2.25
++ used FPC 3.0
++ hilite URLs: opts links_hilite, links_regex
++ hilite URLs: commands to open/copy URL at pos of right-click
+
+1.2.24
++ opt font of bottom-panel listboxes
++ api (plugin Tabs List, bookmark hints in CudaLint)
+
+1.2.23
+- fix Addon Manager "Install" (SF.net blocked http)
+* change in api. Must update plugs: NumberedBookmarks, PythonIntel, CudaExt, Snippets
++ added 120+ snippets for HTML. These mimic hehaviour of Synwrite's feature "SmartTagTabbing". You need plugin Snippets.
++ autodelete markers in deleted selection
++ statusbar panel "msg" now autosized (can put "msg" to left)
+
 1.2.22
 + toolbar api
 + add ui_statusbar_panels panel "ins" (hidden by default)
@@ -128,9 +150,3 @@ Legend:
 + cmd "unfold range at current line"
 + cmd "goto next bookmark": from last goto first
 + color for "fold mark border"
-
-1.0.2
-+ opt ui_tab_numbers
-+ cmd "Edit--Char map"
-+ cmd "reset python plugins" (like Synwrite)
-+ plugins.json can have "menu":false key to hide Plugins menu item
