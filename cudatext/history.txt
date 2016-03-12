@@ -3,6 +3,27 @@ Legend:
   - fixed
   * changed
 
+1.2.29
++ lexer CSS handles @media{...}
++ char-map uses multi-carets on insert
++ more toolbar api
+
+1.2.28
++ translation possible: see menu item Options/Translations, see folder "data/lang"
++ translation Russian, in AddonManager
++ font opt named with suffix on Linux/OSX: font_name__linux, font_size__linux...
++ AddonManager has cmd "Visit plugin homepage"; plugins need field "homepage=" in install.inf
+- fix to handle line length 10k
+- fix to support SpellChecker/Linux 
+
+1.2.26
++ opt minimap_at_left
++ opt caret_after_paste_column
++ opt ui_statusbar_tabsize
++ opt ui_max_history_edits
+* opt spacing_y: default=1
++ cmds "open url at caret", "copy url at caret"
++ api
 
 1.2.25.2
 - fix major issue: lexerlib breaks on installing addon (reason: FPC 3)
