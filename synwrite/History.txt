@@ -3,6 +3,19 @@ Legend:
  - fixed
  * changed
 
+
+6.20.2212
++ lexer Python: keywords def/class/global/lambda have other style
+- fix with Win10 highDPI
+
+6.20.2210
++ lexer CSS handles @media{...}
++ lexer XML upd
++ lexer LESS upd (style: color)
++ lexer SCSS upd (style: color)
++ lexer JS upd (style: doc comment)
++ lexer PHP upd (style: doc comment)
+
 6.20.2195
 
 + new "Tab color" dialog for tab context menu
