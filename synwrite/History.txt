@@ -4,6 +4,34 @@ Legend:
  * changed
 
 
+6.21.2255
+* del "Insert text" dlg (plugin "Insert Numbers" exists)
+* del "Tools/ Web search" items (plugin will be instead)
+* del menuitems "Search/ Select token", "Extend selection" (commands still in pallette)
+- fix: dialogs in plugins must be unicode
+
+6.21.2250
+* del "Sort" dialog (plugin Sort exists)
+* del opt "Sorting type" (used Unicode)
+
+6.21.2245
+* del cmd "Extract Strings" (plugin exists)
++ plugins installing: .inf section numbers can be with gaps, 1 to 400 (like CudaText, eg 1 10 20 30)
+
+6.21.2240
+* removed spell-check (plugin exists)
+* removed cmd "Align by separator" (plugin exists)
+* opt "Underline HTML color" moved to "Lex overrides"
++ api: dlg_custom
++ find-option "Except comments"
+
+6.20.2216
+* def hotkey for Commands now F1 (Alt+P is beep on Win10)
+- fix lexer Python
+- fix lexer Markdown
+- rework PHP word-lists
+- update PHP completion-list (mysql* ids)
+
 6.20.2212
 + lexer Python: keywords def/class/global/lambda have other style
 - fix with Win10 highDPI
