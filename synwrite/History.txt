@@ -4,6 +4,17 @@ Legend:
  * changed
 
 
+6.22.2280
++ opt "Disable auto-hilites for files bigger than ... Mb"
++ cmd "Toggle show micro-map"
+* del lexer "Resource script" to addons
+
+6.22.2270
+* del "Favorites" funcs (plugin exists)
+* del "Rename file" cmd (plugin exists)
+* don't do autocomplete autoshow, while in comment/string
+- disable zip opening in TCmd plugin
+
 6.21.2255
 * del "Insert text" dlg (plugin "Insert Numbers" exists)
 * del "Tools/ Web search" items (plugin will be instead)
@@ -81,7 +92,7 @@ Legend:
 6.19.2155
 
 + font "menus" used also for menu-dialogs (commands, snippets, plugin manager, goto proj file, tab switcher)
-- fix window pos if 2nd monitor removed (prev pos on 2nd monitor) 
+- fix window pos if 2nd monitor removed (prev pos on 2nd monitor)
 - fix Json tree
 
 6.19.2150
@@ -110,7 +121,7 @@ Legend:
 
 6.18.2105
 
-+ icons Silk                                               
++ icons Silk
 * simpler Search menu
 * simpler statusbar (no "busy icon", no "ins/ovr": caret shows it)
 
@@ -144,13 +155,13 @@ changed:
 - fix: "suggest cur word as find text" with mul-line edit
 
 6.17.2045
-   
+
 + ext-tools: macros {***Dir} (except interactivedir) allowed in "init folder" and "file name"
 + ext-tools: macros {SelectionFileNameNum}, {SelectionFileNameAnsiNum}: with numbered suffix of filename
 + project: "Save proj as" may save folder to ini as "{SynDrive}\path" more portable
 + opts: new tab-colors control
 
-     
+
 6.17.2030
 
 * change! Now all INI files must be in [SynWrite]\Settings subfolder, both for portable and usual install. App is always portable now. (Should not be problems with "Program Files", since default install folder is "C:\SynWrite"). File "portable.ini" not needed.
@@ -162,10 +173,10 @@ changed:
 + options: micromap colors
 - fix: lexer C++: treeitem with "const"
 - fix: lexer Markdown
- 
-6.16.2010 
 
-+ lexer C++: hilite of "<Id>", more correct tree for names "Name<Type>" 
+6.16.2010
+
++ lexer C++: hilite of "<Id>", more correct tree for names "Name<Type>"
 + lexer Tcl: more keywords
 + lexer Diff: folding for "Index:"
 * refactored carets code
@@ -189,40 +200,40 @@ changed:
 - fix: C++: tree for "int* func()"
 - fix: VBS: don't fold "one-line if"
 - fix: Python: raw strings
-- fix: Python: comment after block now not folded by this block                   
-- fix: rework C++ tree for functions like "Name1::Name2()" 
+- fix: Python: comment after block now not folded by this block
+- fix: rework C++ tree for functions like "Name1::Name2()"
 - fix: don't show progressbar for find/rep for filesize>120k (caused problem with "replace in all tabs")
-+ AddonMan checks newer items in Update                                                                                           
++ AddonMan checks newer items in Update
 
 6.16.1965
 
-* Emmet is plugin, not in distro. Plugin's better: 1) abbreviation length detected by Emmet now, not by Delphi code; 2) easier to port from WSH to other engine; 3) no need to put Emmet into distro; 4) now many insert points (e.g. expand ul*10) marked like in snippets; 5) temp-file not used now. 
+* Emmet is plugin, not in distro. Plugin's better: 1) abbreviation length detected by Emmet now, not by Delphi code; 2) easier to port from WSH to other engine; 3) no need to put Emmet into distro; 4) now many insert points (e.g. expand ul*10) marked like in snippets; 5) temp-file not used now.
 
- 
-6.16.1955 
+
+6.16.1955
 
 * Python3.3
 * del "Html Tidy", it's plugin now
 * del "Lorem Ipsum", it's plugin now
 * del "Text converters", it's plugin now
 * del "New plugin" tool, it's plugin "Make plugin" now
-* del files (SynPlugins.sample.ini, Py3.2 related) 
+* del files (SynPlugins.sample.ini, Py3.2 related)
 * moved menu "Plugins" in root
 + preinstalled "HtmlTidy", "ColorPicker", "MakePlugin"
 
 6.15.1935
-  
-+ allowed double-extension in lexers (e.g. lexer with extent "blade.js" detects file "Name.blade.js" skipping JS lexer) 
+
++ allowed double-extension in lexers (e.g. lexer with extent "blade.js" detects file "Name.blade.js" skipping JS lexer)
 + clipbd history popup: item "Del selected"
-- fix issue with dbl-click often not selecting word                                     
+- fix issue with dbl-click often not selecting word
 - fix Ctrl-Tab/Shift-Tab in snippet editor
-- fix outdated lexer names in snippets         
+- fix outdated lexer names in snippets
 
 6.15.1925
 
 - fix file Lexers.cfg (block comment for css)
 - fix lexer Lua (note: styles renamed)
-* del lexer "NFO", "Russian detector" (to Addon Manager) 
+* del lexer "NFO", "Russian detector" (to Addon Manager)
 
 6.15.1920
 
@@ -234,7 +245,7 @@ change
 * deleted "Html - Preview selected code"; it is "Html Preview Sel" plugin
 
 adds
-+ added "Addons Manager - Configure"       
++ added "Addons Manager - Configure"
 + many addons at Addons Manager
 + updated lexer Ruby
 + api
@@ -245,7 +256,7 @@ adds
 
 + updated unrar/unzip
 + project saves last "masks to include/exclude" entered in "Add folder" dialog
-lexers:                
+lexers:
 + returned lexer Tcl
 * renamed lexer htaccess to Apache; renamed Asm
 - fix lexers scss, less, markdown
@@ -264,7 +275,7 @@ lexers:
 6.14.1855
 
 * lexers removed to Addon-manager: VB/Scala/Lisp
-* snippets removed to Addon-manager: Python/Java               
+* snippets removed to Addon-manager: Python/Java
 - fix dialog "Lexer props -- Import rules/styles"
 - fix JS lexer (regex rule)
 
@@ -273,7 +284,7 @@ lexers:
 + api to colorize text (like Notepad++)
 * install of plugins: Synw first deletes old lines of this plugin in Synplugins.ini (so order of menuitems is correct if items added/del'ed)
 * menu "Tools-Plugins" sorted
-+ added tutorial 
++ added tutorial
 
 6.14.1835
 
@@ -287,7 +298,7 @@ lexers:
 + translations (except Ru/De) live in Plugin Manager "Install" list
 
 + more options "History - Save ....."
-+ options made visible: "Auto-complete - Hint delay", "View - Show bookmarks gutter column", "View - Show SyncEdit icon" 
++ options made visible: "Auto-complete - Hint delay", "View - Show bookmarks gutter column", "View - Show SyncEdit icon"
 + help FAQ item "How to set plugin shortcuts"
 - redone: mouse wheel code
 
@@ -296,11 +307,11 @@ lexers:
 + option: printing font
 + tab context menu: added "Save", "Save as", del'ed "New tab"
 - fix (cannot apply font color)
-                                                             
-6.14.1800                                                             
+
+6.14.1800
 
 + menu "Help - Web search"; see dir "Data\websearch"
-* menu "Html - Online help" del'ed 
+* menu "Html - Online help" del'ed
 * Html Tidy configs are now files in "Data\HtmlTidy", so user files won't get overwritten by reinstallation. (Delete Tidy.cfg by hands)
 - fixes (url regex, paste in docked Find dlg in tc, VBS lexer, plug manager "save all")
 
@@ -309,8 +320,8 @@ lexers:
 + If you reinstall PluginManager (from PluginManager), new item "PluginManager - Update" will appear. Plugin Updater. Uses local files "install.inf" and "v.inf" (install.inf created by not old Synw; v.inf created by new PluginManager+Synw).
 + lexer C: redone tree
 + lexer VBS: folded for..next
- 
-6.14.1765         
+
+6.14.1765
 
 + clips: now "synw-snippet" files allowed in "Data\clips" subfolders. Usual snippets shown in Clips. Lexer-name is ignored for them.
 + clips: group "Quote sel"
@@ -324,7 +335,7 @@ lexers:
 * lexer Asm change (cannot "restore styles" this time)
 + option "Select/Hilite - Dbl-click + drag: selects by words"
 - fix: cannot call Speech plugin from toolbar
- 
+
 6.13.1745
 
 + search-results have preview by Space
@@ -356,14 +367,14 @@ lexers:
 + updated ftp OpenSSL (thanks, tbeu)
 * default for Redo is now Ctrl+Y (like others)
 - fix: php "function &name" tree
-- fix: back-search broken        
- 
+- fix: back-search broken
+
 6.12.1700
 
 + from ECon 3.10: dbl-click and drag: selects text by words
 + from ECon 3.10: "undo" of several blocks: first move caret, then undo block (like Delphi ide)
 * lexer php(dev): reworked ("restore styles" can't work this update)
-+ lexer php: hilite of backticks, hex, binary 
++ lexer php: hilite of backticks, hex, binary
 + option "Tree - Action of db-click"
 + installer option "make portable"
 - fix: LexerProp combobox error
@@ -406,7 +417,7 @@ lexers:
 6.9.1580
 
 - fix: important bug (since 6.8, can't focus oth group)
-+ dlg Find changed 
++ dlg Find changed
 + dlg Extract: no dups
 + autocomplete for PowerShell, thanks marhc
 
