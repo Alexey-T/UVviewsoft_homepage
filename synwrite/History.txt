@@ -4,6 +4,11 @@ Legend:
  * changed
 
 
+6.22.2290
++ AddonManager: proxy opt should work
++ AddonManager: can stop download-all (Esc)
++ show shorter Py version
+
 6.22.2280
 + opt "Disable auto-hilites for files bigger than ... Mb"
 + cmd "Toggle show micro-map"

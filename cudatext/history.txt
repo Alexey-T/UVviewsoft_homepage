@@ -4,6 +4,19 @@
   * changed
 
 
+1.4.2
++ command-line options: http://wiki.freepascal.org/CudaText#Command_line_parameters
++ Addon Manager can use proxy
++ python lib "requests" preinstalled
++ cmd "toggle tab-key uses spaces"
+- fix: replace-all must show "wait..."
+- fix: force Find dlg to desktop on show
+
+1.4.1
+- encoding: files were opened in "UTF8 no bom" by default. Now it is opt "def_encoding_utf8": open as ANSI (default for Windows) or UTF8 no bom.
++ improve floating Find dlg
++ improve paint of tabs, if lot of em (30-40+)
+
 1.4.0
 + find-dialog can be separate (opt find_separate_form)
 + toolbar full themed now
