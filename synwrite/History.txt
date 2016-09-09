@@ -4,6 +4,22 @@ Legend:
  * changed
 
 
+6.23.2320
+* del stuff related to pair-brackets, plugin "Brackets Hilite" exists
+* del cmd "Insert date/time", plugin "Insert Time" exists
+* del option "Date/time format", ext-tools var {FileDateOp}
+* hide opt "Date/time format for plugins log" from dlg
+- lexer php: add keyword 'false'
+
+6.23.2310
+* del special dlg for "Goto bookmark", used usual menu dialog
+* del code for "portable bookmarks", will be a plugin
++ api
+
+6.22.2300
+* del dialog "Explorer Integration", now plugin exists
+* del cmd-line key "/reg"
+
 6.22.2290
 + AddonManager: proxy opt should work
 + AddonManager: can stop download-all (Esc)
