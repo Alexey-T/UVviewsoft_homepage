@@ -4,6 +4,22 @@ Legend:
  * changed
 
 
+6.25.2380
++ improved lexers: CSS, JS, PHP, Batch, Ruby, C, C++, C#, Tcl, SQL, YAML, VB, Markdown, Haskell, Makefile (using Sublime syntax tests)
+* del lexers to addons: AutoIt, AutoHotkey
+- fix for Api (BracketsHilite plugin crashed)
+
+6.25.2360
++ Python 3.5.2
++ lexers JS, Python: keywords async/await
+
+6.24.2350
+* breaking change. File LexLib.lxl not used now, you may delete it. Instead, .lcf files are used, in subdir "data/lexlib". Now each lexer is one .lcf file and, if sublexers exist, one .cuda-lexmap file (it lists sublexers names). Py-API still works with lexer-lib in memory, but lexer-lib file not saved now.
+* dialog "Lexer Lib" simplified
++ plugin "Insert Time" preinstalled
++ upd lexer JS: upd keywords, hilite backtick-strings
++ add lexers: YAML, reST
+
 6.23.2320
 * del stuff related to pair-brackets, plugin "Brackets Hilite" exists
 * del cmd "Insert date/time", plugin "Insert Time" exists
