@@ -4,6 +4,34 @@ Legend:
  * changed
 
 
+6.29.2470
++ option "Cut line if no selection" (was "Copy/Cut line...", now 2 opts)
+* delete option "Preserve selection" (caused problems with plugins, they want caret at selection)
+* lex Pascal: drop hilites of "types", "implementation backgnd"
+* api
+
+6.28.2450
++ api (for search-marks)
+- fix: installer of lexer forgot to copy .cuda-lexmap
+- fix: manifest file for high-dpi
+
+6.28.2440
+* change: deleted stuff "Select/Hilite - Auto-hilites", use plugin Hilite now (Synw code has 5 opts, plugin has 10 opts, via config file)
++ lex Pascal: keywords "types", "msgs"
+
+6.27.2430
+* change: added plugin New File; used on clickin arrow near "New file" tool button, instead of old menu (plugin is easier to edit)
+* change: no menu, only item "File - New file" (cmd "New window" still exists in command list)
++ api
+
+6.26.2420
+* change: removed built-in commands for commenting; preinstalled plugin Comments (with even more commands, and Config dialog)
+* change: removed built-in Sort cmds: plugin Sort does better job (more opts)
++ improved lexers: C#, Bash, reST
++ updated SynFTP (thanks tbeu)
++ api (for lexer props)
+* some api deprecated
+
 6.25.2380
 + improved lexers: CSS, JS, PHP, Batch, Ruby, C, C++, C#, Tcl, SQL, YAML, VB, Markdown, Haskell, Makefile (using Sublime syntax tests)
 * del lexers to addons: AutoIt, AutoHotkey
