@@ -1,0 +1,34 @@
+@media (min-width: 320px) and (max-width: 991px) {
+  p:first-child {
+    display: none;
+  }
+  table.rounded {
+    width: 100%;
+  }
+  table.rounded td {
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  table.rounded:nth-of-type(2) td:first-child {
+    display: none;
+  }
+  table.rounded:nth-of-type(2) td {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  table.rounded:nth-of-type(2) a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  body {
+    position: relative;
+  }
+  div.footer {
+    padding-bottom: 5px;
+  }
+}
