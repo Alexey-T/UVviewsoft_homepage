@@ -1,83 +1,76 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="" />
-	<meta name="keywords" content="CudaText, Code, Text, Editor" />
-	<meta name="description" content="CudaText Editor" />
-	<meta name="robots" content="all" />
-	<title>CudaText - Home</title>
-	<link rel="SHORTCUT ICON" href="favicon.ico">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alexey Torgashin" />
+    <meta name="keywords" content="CudaText, Code, Text, Editor" />
+    <meta name="description" content="CudaText Editor" />
+    <meta name="robots" content="all" />
+    <title>CudaText - Home</title>
+    <link rel="shortcut icon" href="favicon.ico">
     <link href="main.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-
-<div id="body">
-  <div id="head">
-	  <h1>CudaText</h1>
-	  <h2>Cross-platform code editor</h2>
-  </div>
-  <div id="menu">
-	  <a href="index.html">Home</a>
-	  <a href="download.html">Download</a>
-	  <a href="http://wiki.freepascal.org/CudaText" target="_blank">Wiki</a>
-	  <a href="http://synwrite.sourceforge.net/forums" target="_blank">Forum</a>
-	  <a href="http://uvviewsoft.com/donate.htm"><font color="#f0f080">Donate</font></a>
-  </div>
-
-  <div id="content">
-    <div class="section">
-      <br>
-      <br>
-      <a href="https://sourceforge.net/projects/cudatext/files/" target="_blank">Downloads</a>
-      <br>  
-      <a href="http://uvviewsoft.com/cudatext/files/" target="_blank">Downloads mirror</a>  
-      <br>
-      <a href="history.txt">History file</a> <br>
-      
-      <ul>
-      <li> <b>Windows</b>: x32: portable,
-        <font color=#40b040>version 1.5.4.0 (2016.12.07)  </font>
-      <li> <b>Linux</b>: x64: portable Gtk2, portable Qt, deb-package Gtk2,
-        <font color=#40b040>version 1.5.4.0 (2016.12.07)  </font>
-      <li> <b>OS X</b>: x32 Carbon: disk image,
-        <font color=#40b040>version 1.5.1.0 (2016.10.31) </font>
-      </ul>
-
-      <a href="https://sourceforge.net/projects/cudatextbuildlinuxi386/files/" target=_blank>3rd-party page</a> has packages for:
-      <ul>
-      <li> Linux x32
-      <li> Windows XP (with Python 3.4)
-      </ul>
-      
-      <p>
-      Latest add-ons updates:
-      <ul>
-        <li> [lexer] HTML Django (new)
-        <li> [lexer] PlantUML (new)
-        <li> [plugin] Filter Lines (new)
-        <li> [lexer] ZenScript/MineTweaker (new)
-        <li> [lexer] Stata
-        <li> [lexer] Assembly SPARC (new)
-        <li> [lexer] Assembly SHARC DSP (new)
-        <li> [plugin] Tern (new, code intelligence for JavaScript)
-        <li> [plugin] Markdown Table Format (new, port from Sublime)
-        <li> [plugin] HTML Ops (new, few commands to add tags: b/i/u)
-        <li> [plugin] ExtTools (upd, added macros functions, q/u/l/t)
-        <li> [plugin] SQLTools (new, ported from Sublime)
-        <li> [plugin] Paste as String (new)
-        <li> [plugin] CSS Table of Contents (new)
-        <li> [plugin] ExtTools (upd, supports URL-tools)
-        <li> [plugin] Snippets (upd)
-        <li> [linter] CSS using csstree (new)
-        <li> [lexer] Assembly Z80 SjASM (new)
-        <li> [lexer] HJSON (new)
-      </ul>
-    </div>
-  </div>
-  <br>
-  <div class="footer" align=right>Copyright &copy; UVViewSoft</div>
-</div>
-</body>
-</html>
+    <link href="mobile.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="body">
+      <div id="head">
+        <h1>CudaText</h1>
+        <h2>Cross-platform code editor</h2>
+      </div>
+      <div id="menu">
+        <a href="index.html">Home</a>
+        <a class="current" href="download.html">Download</a>
+        <a rel="nofollow" href="http://wiki.freepascal.org/CudaText" target="_blank">Wiki</a>
+        <a rel="nofollow" href="http://synwrite.sourceforge.net/forums/" target="_blank">Forum</a>
+        <a class="donate" href="/donate.htm">Donate</a>
+      </div>
+      <div id="content">
+        <div class="section">
+          <br>
+          <br>
+          <a rel="nofollow" href="https://sourceforge.net/projects/cudatext/files/" target="_blank">Downloads</a>
+          <br>
+          <a href="/cudatext/files/" target="_blank">Downloads mirror</a>
+          <br>
+          <a target="_blank" href="history.txt">History file</a> <br>
+          <ul>
+            <li><b>Windows</b>: x32: portable, <span class="actual-version">version 1.5.4.0 (2016.12.07)</span></li>
+            <li><b>Linux</b>: x64: portable Gtk2, portable Qt, deb-package Gtk2, <span class="actual-version">version 1.5.4.0 (2016.12.07)</span></li>
+            <li><b>OS X</b>: x32 Carbon: disk image, <span class="actual-version">version 1.5.1.0 (2016.10.31)</span></li>
+          </ul>
+          <a rel="nofollow" href="https://sourceforge.net/projects/cudatextbuildlinuxi386/files/" target="_blank">3rd-party page</a> has packages for:
+          <ul>
+            <li>Linux x32</li>
+            <li>Windows XP (with Python 3.4)</li>
+          </ul>
+          <p>
+            Latest add-ons updates:
+            <ul>
+              <li>[lexer] HTML Django (new)</li>
+              <li>[lexer] PlantUML (new)</li>
+              <li>[plugin] Filter Lines (new)</li>
+              <li>[lexer] ZenScript/MineTweaker (new)</li>
+              <li>[lexer] Stata</li>
+              <li>[lexer] Assembly SPARC (new)</li>
+              <li>[lexer] Assembly SHARC DSP (new)</li>
+              <li>[plugin] Tern (new, code intelligence for JavaScript)</li>
+              <li>[plugin] Markdown Table Format (new, port from Sublime)</li>
+              <li>[plugin] HTML Ops (new, few commands to add tags: b/i/u)</li>
+              <li>[plugin] ExtTools (upd, added macros functions, q/u/l/t)</li>
+              <li>[plugin] SQLTools (new, ported from Sublime)</li>
+              <li>[plugin] Paste as String (new)</li>
+              <li>[plugin] CSS Table of Contents (new)</li>
+              <li>[plugin] ExtTools (upd, supports URL-tools)</li>
+              <li>[plugin] Snippets (upd)</li>
+              <li>[linter] CSS using csstree (new)</li>
+              <li>[lexer] Assembly Z80 SjASM (new)</li>
+              <li>[lexer] HJSON (new)</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="footer" align="right">Copyright &copy; UVViewSoft</div>
+      </div>
+    </body>
+  </html>
