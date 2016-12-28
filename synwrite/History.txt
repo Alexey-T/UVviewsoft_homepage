@@ -4,6 +4,18 @@ Legend:
  * changed
 
 
+6.31.2500
+* removed commands, they live in plugin Sort: remove dup lines, remove dups+origins, remove adjacent dups, extract dups, extract uniques, remove blank lines, reverse lines, shuffle lines
+- fix: autocomplete list closed by '-' chr
+- fix: lex HTML, for updated Twig lexer
+
+6.30.2490
++ (Totalcmd plugin) added option QuitOnUnknownFiles; see Readme\HiddenOptionsForLister.txt
+* (Totalcmd plugin) renamed option TxOnly to TextOnly
++ lex HTML: hilite entities &nnnn;, hilite incorrect tag props; hilite colors #nnn
+* lex Pascal: dont hilite "interface bkgnd"
+- fix: lex Markdown
+
 6.29.2470
 + option "Cut line if no selection" (was "Copy/Cut line...", now 2 opts)
 * delete option "Preserve selection" (caused problems with plugins, they want caret at selection)
