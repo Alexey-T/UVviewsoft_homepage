@@ -57,6 +57,9 @@ PRE {
   background-color: white;
   color: #666666;
 }
+#menu a.current {
+  text-decoration: underline;
+}
 
 #content {
   min-height: 250px;
@@ -140,4 +143,16 @@ PRE {
 
 img {
   border: 0;
+}
+
+.donate {
+  color: #f0f080 !important;
+}
+
+.blue {
+  color: blue;
+}
+
+.actual-version {
+  color: #40b040;
 }
