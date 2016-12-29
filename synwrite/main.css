@@ -149,3 +149,7 @@ img {
 .donate {
   color: #f0f080 !important;
 }
+
+.current {
+  text-decoration: underline !important;
+}

@@ -38,4 +38,7 @@
   .ar ul {
     padding-left: 15px;
   }
+  #content br:first-child {
+    display: none;
+  }
 }
