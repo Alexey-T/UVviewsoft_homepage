@@ -141,3 +141,15 @@ PRE {
 img {
   border: 0;
 }
+
+.cudatext {
+  color: #40ff60 !important;
+}
+
+.donate {
+  color: #f0f080 !important;
+}
+
+.current {
+  text-decoration: underline !important;
+}
