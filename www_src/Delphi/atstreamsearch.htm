@@ -1,0 +1,33 @@
+<b>ATStreamSearch</b> is a non-visual component which implements stream searching functionality.
+You set the FileName or Stream property and then call
+FindFirst/FindNext methods to perform search with needed options.
+Streams and files can be of unlimited size (Int64) - even for RegEx search!
+
+<p>
+<center>
+<img src="img/ATStreamSearch_Demo.gif" class="shot" alt=""><br>
+<i>Screenshot of demo application</i>
+</center>
+
+<p>
+Search options supported are:<br>
+<ul>
+<li>Case Sensitive</li>
+<li>Whole Words</li>
+<li>Search Backward (not for RegEx mode)</li>
+<li>Regular Expressions (optional:
+    <a href="http://www.yunqa.de/delphi/regex/" target="_blank"><b>DIRegEx</b></a> library must be used)</li>
+</ul>
+
+<p>
+Text encodings currently supported are:
+<ul>
+<li>ANSI</li>
+<li>OEM</li>
+<li>EBCDIC</li>
+<li>KOI8</li>
+<li>ISO</li>
+<li>Mac</li>
+<li>Unicode (UCS-2) LE and BE</li>
+<li>plus many others
+</ul>

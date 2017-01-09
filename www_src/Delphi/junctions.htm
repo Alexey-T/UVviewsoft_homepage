@@ -1,0 +1,25 @@
+This is unit which allows to create/delete/list directory junctions (reparse points) under Windows 2000/XP/Vista+.
+Under Windows Vista it uses the new Vista's API, under older systems it uses undocumented low-level NT API.
+
+<p>
+Functions included are:
+
+<p>
+<center>
+<textarea cols="66" rows="7" readonly="readonly">
+function FCreateSymlink(const fnLink, fnTarget: WideString): boolean;
+function FGetSymlinkInfo(const fn: WideString; var Target: WideString; var LinkType: TReparsePointType): boolean;
+function FDeleteSymlink(const fn: WideString): boolean;
+function FDriveSupportsSymlinks(const fn: WideString): boolean;
+</textarea>
+</center>
+
+<p>
+A demo console utility is included, similar to
+<a href="http://www.sysinternals.com" target="_blank">SysInternals</a>' Junction utility:
+
+<p>
+<center>
+<img src="img/Junctions.gif" class="shot" alt=""><br>
+<i>Junctions console utility</i>
+</center>

@@ -1,0 +1,24 @@
+<script language=javascript>
+<!--
+function px(addr)
+{
+  for (I=0;I<addr.length;I++)
+    if (addr.charAt(I)=='z' && I+1<addr.length && addr.charAt(I+1)=='y') I++
+    else document.write(addr.charAt(I));
+}
+
+function mx(addr,text)
+{
+  document.write("<a href=\"mailto:"); px(addr); document.write("\">"); px(text); document.write("<\a>");
+}
+//-->
+</script>
+
+
+Technical support can be received via e-mail:
+<script language=javascript><!--
+mx("support@uvviewsoftzy.com?Subject=Log%20Viewer","support@uvviewsoftzy.com");
+--></script>
+<noscript>(turn on Javascript to see e-mail)</noscript>.
+Please include "Log Viewer" into message subject to indicate it's not a spam.
+Use English or Russian please.
