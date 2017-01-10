@@ -4,6 +4,19 @@ Legend:
  * changed
 
 
+6.32.2530
++ command line param /print: syn.exe /print file1 file2 ...
++ updated TutorialPlugins
+* AddonManager: download all: skip big sized plugins SynCodeIntel, SynSharp (25M)
+* removed German files to addon
+- fix: none-color was removed in Lexer Prop dlg
+- fix: console edit/memo font color wasnt set
+
+6.31.2510
++ improve colors/theme settings: added btn "choose color", hide "sys colors"
++ color-dialogs keep user items for a)options dlg, b)lexer props dlg
++ lexer props dlg: hide crappy styles ops "hidden","read-only"; hide "sys colors"
+
 6.31.2500
 * removed commands, they live in plugin Sort: remove dup lines, remove dups+origins, remove adjacent dups, extract dups, extract uniques, remove blank lines, reverse lines, shuffle lines
 - fix: autocomplete list closed by '-' chr
