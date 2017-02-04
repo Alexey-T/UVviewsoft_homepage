@@ -4,6 +4,12 @@
   * changed
 
 
+1.6.6
++ find/replace: opt "in selection"
++ cmd "goto last editing pos" uses find_indent_vert/horz
++ handled click on micromap
++ api additions
+
 1.6.5
 + windows version-info, for antivir
 + improve report, after installing lexer
