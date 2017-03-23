@@ -26,6 +26,9 @@
     width: 100%;
     max-width: 440px;
   }
+  .section table {
+    width: 100%;
+  }
   .footer {
     padding-bottom: 0 !important;
     /* margin-top: 0; */
