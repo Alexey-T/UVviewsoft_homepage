@@ -4,6 +4,24 @@
   * changed
 
 
+1.7.8
++ macOS: horiz scroll by trackpad should work now
++ option ui_sidebar_show
++ option mouse_wheel_speed_vert
++ option mouse_wheel_speed_horz
++ command line: improved help (--help)
++ command line: aliases for keys (-h -v -r -n -w)
++ command line: added key --enc=
+* command line: renamed key: --readonly
+* changed format of file date in session (was number, now readable)
+- fix: tabs "x" must act on mouse-up
+
+1.7.7
++ menu item "File - New from template" (same as click on arrow near "new icon")
++ updated FCL-JSON lib from current FPC trunk
++ dont escape "/" in user.json
+* changed ui_sidebar_theme to "octicons_20x20"
+
 1.7.6
 + option "ui_sidebar_theme"
 * sidebar buttons for "Search", "Go to"; deleted toolbar icons for the same
