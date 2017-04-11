@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 <?php
   array_shift($argv);
   if (count($argv) == 0) { echo "Arguments missing"; exit; }
@@ -57,20 +46,6 @@
 </head>
 <body>
 
-
-<!-- Upper table -->
-<table class="adv" width=<?php echo $ww ?> align="center" >
-  <!-- Ads -->
-  <tr>
-    <td class="text" align="center">
-      <?php require('ads/UVTop.htm'); ?>
-    </td>
-  </tr>
-  <tr>
-    <td class="text" height="4">
-    </td>
-  </tr>
-</table>
 
 <table class="main" width=<?php echo $ww ?> align="center" >
   <!-- Logo -->
@@ -180,7 +155,7 @@
 
         <tr>
           <td class="caption_app">
-            Links
+            Partners
           </td>
         </tr>
 
@@ -213,22 +188,18 @@
             <?php echo $aname ?>
           </td>
         </tr>
-        <!-- Contents gap -->
-        <tr>
-          <td class="text" height="16">
-          </td>
-        </tr>
+
         <!-- Contents text -->
         <tr>
           <td class="text" >
+            <br>
             <?php
-              ////if ($is_index) {require('ads/UVRed.htm');}
-              echo file_get_contents($afile, "r");
-              ?>
+              echo file_get_contents($afile, "r")
+            ?>
             <p>
           </td>
         </tr>
-        <!-- Contents end -->
+
       </table>
     </td>
     <!-- Contents cell end -->
@@ -251,21 +222,7 @@
     </td>
   </tr>
 
-  <!-- Ads -->
-  <tr>
-    <td class="text" height="4">
-    </td>
-  </tr>
-  <table width=480 align=center>
-  <tr>
-    <td>
-        <hr>
-        <?php require("ads/adUV.php"); ?>
-    </td>
-  </tr>
-  </table>
 </table>
-<!-- Bottom table end -->
 
 </body>
 </html>

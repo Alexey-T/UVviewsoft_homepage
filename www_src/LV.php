@@ -35,21 +35,6 @@
 </head>
 <body>
 
-
-<!-- Upper table -->
-<table class="adv" width=<?php echo $ww ?> align="center" >
-  <!-- Ads -->
-  <tr>
-    <td class="text" align="center">
-      <?php require('Ads\UVTop.htm'); ?>
-    </td>
-  </tr>
-  <tr>
-    <td class="text" height="4">
-    </td>
-  </tr>
-</table>
-
 <table class="main" width=<?php echo $ww ?> align="center" >
   <!-- Logo -->
   <tr>
@@ -134,46 +119,6 @@
           </td>
         </tr>
 
-        <tr>
-          <td class="caption_app">
-            Links
-          </td>
-        </tr>
-
-        <tr>
-          <td class="text" height="16">
-          </td>
-        </tr>
-
-        <!--
-        <tr>
-          <td class="text" align="center">
-            <a href="http://www.softpedia.com/progClean/Universal-Viewer-ATViewer-Clean-56841.html" target="_blank"><img src="img/award_softpedia_sm.gif" alt="Softpedia award" title="Softpedia award"></a>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="text" height="8">
-          </td>
-        </tr>
-
-        <tr>
-          <td class="text" height="8">
-          </td>
-        </tr>
-        -->
-
-        <tr>
-          <td class="text" align="center">
-            <a href="pad_logviewer.xml" target="_blank"><img src="img/logo_pad.gif" alt="PAD file" title="PAD file"></a>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="text" height="16">
-          </td>
-        </tr>
-
       </table>
     </td>
     <!-- Navigation cell end -->
@@ -223,26 +168,7 @@
     </td>
   </tr>
 
-  <!-- Ads -->
-  <tr>
-    <td class="text" height="8">
-    </td>
-  </tr>
-  <tr>
-    <td class="text" align="center">
-      <?php require('Ads\UVTop.htm'); ?>
-    </td>
-  </tr>
 </table>
-  <table width=480 align=center>
-  <tr>
-    <td>
-        <hr>
-        <?php require("Ads\adLV.php"); ?>
-    </td>
-  </tr>
-  </table>
-<!-- Bottom table end -->
 
 </body>
 </html>
