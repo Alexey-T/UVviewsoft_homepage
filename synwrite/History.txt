@@ -4,6 +4,14 @@ Legend:
  * changed
 
 
+6.39.2750
++ updated SynFTP: several changes from NppFTP ported, updated libs (thanks tbeu)
++ API
+
+6.38.2725
++ menuitem "Options - Integrate with Explorer" to show info about plugin
++ autocomplete list closes by tab-key
+
 6.38.2720
 + AddonManager uses registry not on SF.net, but on Github - faster
 * deleted 4 cmds: "Move cursor N chars up/down/left/right"; use plugin "Move Caret" with same funcs
