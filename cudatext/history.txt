@@ -4,8 +4,20 @@
   * changed
 
 
+1.9.0
++ distraction-free mode, see http://wiki.freepascal.org/CudaText#Full-screen
++ added option "ui_fullscreen" with new values
+* removed option "ui_fullscreen_hide"
+* option "margin" changed default to 2000 (ie, hide)
+- fixed: Win10 old issue when 2nd app instance cannot popup to front
++ api
+
+1.8.6
+- fixes for Windows high-dpi (dialogs, toolbar btns, folding icons)
++ api
+
 1.8.5
-- fixed for Windows high dpi (scale more UI items)
+- fixed for Windows high-dpi (scale more UI items)
 - fix slow scrolling with minimap shown
 + option ui_tree_theme
 + command "place bookmarks on carets"
