@@ -4,6 +4,27 @@
   * changed
 
 
+1.10.0
++ preinstalled plugin Tabs List
++ Project Manager: read only toplevel dirs from disk, and read other dirs only on unfolding them in treeview (patch by @pohmelie)
++ Project Manager: added toolbar
++ api
+* finder: don't put backward selection on find-backward
+* lexer help file converted from CHM format to ODT
+- fix: loosing editor focus on Linux
+
+1.9.3
++ preinstalled Project Manager plugin
++ can open folder names from command line, e.g. "cudatext ." like Atom/Sublime can do
++ menuitem "File - Open folder", it calls Project Manager
++ menuitem "Help - Check for updates", it calls Addon Manager
++ api
+
+1.9.1
++ finder: replace-all made much faster (note: when confirmation is on, you will see unchanged text, it will replace later)
+- finder: count-all must find w/o overlaps (non-regex mode)
++ api
+
 1.9.0
 + distraction-free mode, see http://wiki.freepascal.org/CudaText#Full-screen
 + added option "ui_fullscreen" with new values
