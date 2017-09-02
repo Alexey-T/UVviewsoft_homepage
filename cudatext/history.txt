@@ -4,6 +4,31 @@
   * changed
 
 
+1.17.0 (2017/09)
+
++ API to shade text (used in plugin Focus Mode)
++ Project Manager: added commands "Add current file", "Add all opened files"
++ lexer Bash: hilite varname before "=", don't hilite keyword after "."
+- fixed: high-dpi in ProjManager and bottom panels
+- fixed: initial dir of save-dialogs for untitled tabs
+- fixed: wrong saved keys.json if "overwrite duplicate hotkey" was used with plugins
+- fixed: code-tree lost vert scrollbar
+
+1.16.0 (2017/08)
+
++ save-as untitled tab: suggest first free filename: new.txt, new1.txt, new2.txt... (like SynWrite)
++ reworked confirmation for duplicate hotkeys in Hotkey dialog (ask to overwrite inside this dialog)
++ mouse column selection: used "cross" cursor (like TextMate)
++ in single line inputs, make right edge of text near the edge of control (like Windows)
++ option "copy_column_aligned_by_spaces"
++ Addon Manager: don't allow to remove standard plugins
++ Addon Manager: cache addon filelists for 10 minutes
+* dialog "Lexer library" reworked, used normal buttons on top, added button Hide/Show instead of checkmarks
+- fixed: Project Manager "Show panel" command
+- fixed: checkmarks in View/Groups menu
+- fixed: column selection by mouse: "caret_after_end":false must not break column
+- fixed: problem with ":line" in command line and single instance
+
 1.15.0 (2017/08)
 
 + option "centering_width"
