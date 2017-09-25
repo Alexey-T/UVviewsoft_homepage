@@ -36,41 +36,36 @@
           <a target="_blank" href="history.txt">History file</a>
           <br>
           <ul>
-            <li><b>Windows</b>: x32/x64, portable: <span class="actual-version">version 1.17.0 (2017/09)</span></li>
-            <li><b>Linux</b>: x32/x64, portable gtk2, deb-package gtk2: <span class="actual-version">version 1.17.0 (2017/09)</span></li>
-            <li><b>Linux-ARM</b>: <span class="actual-version">version 1.17.0 (2017/09)</span></li>
-            <li><b>macOS</b>: <span class="actual-version">version 1.17.0 (2017/09)</span></li>
+            <li><b>Windows</b>: x32/x64, portable: <span class="actual-version">version 1.20.0 (2017/09)</span></li>
+            <li><b>Linux</b>: x32/x64, portable gtk2, deb-package gtk2: <span class="actual-version">version 1.20.0 (2017/09)</span></li>
+            <li><b>Linux-ARM</b>: <span class="actual-version">version 1.20.0 (2017/09)</span></li>
+            <li><b>macOS</b>: <span class="actual-version">version 1.19.0 (2017/09)</span></li>
           </ul>
           
+          <!--
           <br>
           <a rel="nofollow" href="https://sourceforge.net/projects/cudatextbuildlinuxi386/files/" target="_blank">3rd-party page</a> has some alternative packages.
+          -->
           
           <br>
           <br>
-          <table bgcolor=#cfc width="80%">
+          <table>
+          <tr>  
+            <td bgcolor=#ddf width="80%">
+              Note for Windows: download Python engine, with the same bitness x32/x64 as CudaText, at 
+              <a href="https://sourceforge.net/projects/cudatext/files/release/Windows/Python_engine/" target="_blank">SourceForge</a>
+              and unpack zip file to CudaText folder.
+            </td>
+          </tr>  
           <tr>
-            <td>
+            <td bgcolor=#cfc width="80%">
               Note for Linux and macOS versions: Python engine is not shipped with CudaText.
               To use plugins on macOS, you must install Python 3.x from official <a href="http://www.python.org" target=_blank>python.org</a>.
               To use plugins on Linux, see instruction inside "default.json" config about "pylib".
             </td>
           </tr>
           <tr>
-              <td></td>
-          </tr>
-          <tr>  
-            <td>
-              Note for Windows: download Python engine, with the same bitness x32/x64 as CudaText, at 
-              <a href="https://sourceforge.net/projects/cudatext/files/release/Windows/Python_engine/" target="_blank">SourceForge</a>
-              and unpack zip file to CudaText folder.
-            </td>
-          </tr>  
-          </table>
-          
-          <br>
-          <table bgcolor=#eec width="80%">
-          <tr>
-            <td>
+            <td bgcolor=#edd width="80%">
               Linux-ARM version is for Raspberry Pi 3, see <a href="img/cudatext-rpi3-screen.png">example screenshot</a>
               how to write option "pylib" there.
             </td>
@@ -81,6 +76,12 @@
           <p>
             Latest add-ons updates:
             <ul>
+              <li>[lexer] Vue (new)
+              <li>[plugin] CudaExt (upd, several new commands)
+              <li>[snippets] SCSS (new, ported from ST3)
+              <li>[plugin] SFTP Support for Windows (new, addon for FTP plugin)
+              <li>[plugin] CaretHistory (new)
+              <li>[plugin] Insert Emoji (new)
               <li>[plugin] Focus Mode (new)
               <li>[plugin] NTFS Streams (new)
               <li>[plugin] Hash Generator (new, like in PSPad)
