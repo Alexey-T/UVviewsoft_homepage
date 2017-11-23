@@ -4,6 +4,11 @@
   * changed
 
 
+1.24.5 (2017/11)
+
+- fix: option "autocomplete_autoshow_chars" must ignore numbers
+- fix: some groups-related commands used wrong group index
+
 1.24.3 (2017/11)
 
 - fix: wrong scaling of few dialogs on Win10 high-dpi
