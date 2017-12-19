@@ -4,10 +4,59 @@
   * changed
 
 
-1.24.5 (2017/11)
+1.30.0 (2017/12)
 
++ add: binary viewer. It is called when non-text file is opened, with additional prompt. File size for binary viewer can be any.
++ add: dialog "Go to" works with binary viewer: can enter percents with "%" char, or hex offset
++ add: dialog "Go to" for editor: can enter percents with "%" char
++ add: prompts "file is not text", "file is too big" changed to one dialog (to allow binary view)
++ add: option "viewer_binary_width"
+- fix: lexer C# code-tree for generic func
+
+1.28.2 (2017/12)
+
+- fix: major bugfix, crash on paste command (in 1.28.0)
+- fix: files weren't added to recents on app closing
++ add: if deleting too big block (bigger than option "undo_limit"), do it fast w/o undo
+
+1.28.0 (2017/12)
+
++ optimized memory usage on big files. E.g. Windows x32 version with 100M log: mem usage was 900M, now 720M.
++ add: support mouse wheel horizontal scrolling
++ add: macOS: can drag-drop folder from Finder onto CudaText icon
+* change: lexer SCSS removed to add-ons
+* change: lexer LESS removed to add-ons
+* change: lexer "SynWrite acp files" removed to add-ons
+* change: lexer "SynWrite snippets" removed to add-ons
+
+1.27.0 (2017/12)
+
++ add: lite lexer SQL^
++ add: lexer API supports lite lexers
++ add: console lines "Init: cuda_nnnn" on loading plugins; option "py_init_log"
+* change: usual lexer SQL removed to add-ons
++ add: AddonManager: added option "Install: show confirmation and report"
+* change: AddonManager: removed confirmation "Install selected addon?"
+
+1.26.0 (2017/11)
+
++ add: Lite lexers - for huge files, e.g. 800Mb XML file. Lite lexers don't support code-tree, folding, rich hiliting; but they work very fast on any file size (with average line length).
++ add: for too big files (option exists already) now lite lexers are detected
++ add: lite lexer XML^
++ add: lite lexer JSON^
++ add: lite lexer Log files^
+- fix: wrong column selection, if tab-chars at line start
+
+1.25.0 (2017/11)
+
++ add: option "ui_tab_multiline" - enable multi-line tabs
++ add: option "ui_max_lines_codetree" (default 8K lines) - disable code-tree for too big files
++ add: show console log, when session or project loads/saves
+* change: lexer JSON: code-tree simplified (was slow on big files)
+- fix: issue with last session, if "ui_reopen_session":false
+- fix: Linux copy-to-clipboard could append zero char
 - fix: option "autocomplete_autoshow_chars" must ignore numbers
-- fix: some groups-related commands used wrong group index
+- fix: some groups-related commands
 
 1.24.3 (2017/11)
 
