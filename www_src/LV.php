@@ -8,7 +8,7 @@
   if (count($argv) == 0) { echo "Arguments missing"; exit; }
 
   //Constants:
-  $ww = 780;          //Table width
+  $ww = 800;          //Table width
   $ww2 = 155;         //Navigation width
 
   //Params:
@@ -30,7 +30,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-  <title>LogViewer Pro<?php if ($is_index) { echo " - Home page"; } else { echo " - ".$aname; } ?></title>
+  <title>LogViewer<?php if ($is_index) { echo " - Home page"; } else { echo " - ".$aname; } ?></title>
   <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -57,7 +57,7 @@
           </td>
 
           <td class="title_app">
-            <a href="http://www.uvviewsoft.com/logviewer/" class="title">LogViewer Pro</a>
+            <a href="http://www.uvviewsoft.com/logviewer/" class="title">LogViewer</a>
           </td>
         </tr>
       </table>
@@ -163,7 +163,7 @@
   </tr>
   <tr>
     <td class="text" align="center">
-      Copyright &copy; UVViewSoft <br>
+      Copyright &copy; UVviewsoft <br>
       Icons by <a href="http://www.readyicons.com" target="_blank" class="title">ReadyIcons.com</a>
     </td>
   </tr>
