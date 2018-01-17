@@ -4,6 +4,39 @@
   * changed
 
 
+1.35.0 (2018/01)
+
++ add: auto-completion listbox in HTML allows multi-carets (like Sublime does)
++ add: on macOS, some features use Command-key instead of Ctrl-key: Ctrl+click; Ctrl+(double click); Ctrl with drag-drop of text
++ add: API
+* change: option "lexer_dynamic_hilite" turned off by default (problems with option on macOS; slows down)
+- fix: Find dialog: Shift key runs search
+
+1.34.0 (2018/01)
+
++ add: many optimizations in core for scrolling speed on huge lines (4M chars)
++ add: Ctrl+(double click) now selects additional word
++ add: command "Selection - Expand selection to word" (like in many editors)
++ add: option "allow_wide_chars"
++ add: commands "find current word/sel next/prev": they select current word before search
+* change: option "find_hotkey_find_next" is now hotkey, which is independant from focused input; its value "Enter" is ignored, other value works. "Enter" is now hardcoded hotkey.
+- fix: cannot find string with trailing EOL (multi-line input)
+
+1.32.2 (2018/01)
+
+- minor fixes
++ add: API
+
+1.32.0 (2018/01)
+
++ add: deleting of huge block (w/o undo) is instant now (before it was n seconds)
++ add: code-tree has horiz scrollbar
++ add: statusbar menu for tab-size: added sizes 3, 5, 6, 7
++ add: Project Manager variables for ExtTools plugin: {ProjMainFileNameOnly}, {ProjMainFileNameNoExt}
++ add: API for statusbar
+- fix: Windows high-DPI wrong scaling of plugin dlgs
+- fixes
+
 1.31.0 (2017/12)
 
 + add: option "ui_non_text" has additional values, to auto open binary files in binary/hex modes
