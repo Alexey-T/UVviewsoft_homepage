@@ -36,40 +36,36 @@
           <a target="_blank" href="history.txt">History file</a>
           <br>
           <ul>
-            <li><b>Windows</b>: x32/x64: <span class="actual-version">1.42.0 (2018/02)</span></li>
-            <li><b>Linux</b>: x32/x64: <span class="actual-version">1.42.0 (2018/02)</span></li>
-            <li><b>Linux-ARM</b>: <span class="actual-version">1.42.0 (2018/02)</span></li>
-            <li><b>macOS</b>: <span class="actual-version">1.42.0 (2018/02)</span></li>
-            <li><b>FreeBSD</b>: <span class="actual-version">1.42.0 (2018/02)</span></li>
+            <li><b>Windows</b>: x32/x64: <span class="actual-version">1.48.0 (2018/04)</span></li>
+            <li><b>Linux</b>: x32/x64: <span class="actual-version">1.48.0 (2018/04)</span></li>
+            <li><b>Linux-ARM</b>: <span class="actual-version">1.48.0 (2018/04)</span></li>
+            <li><b>macOS</b>: <span class="actual-version">1.47.0 (2018/03)</span></li>
+            <li><b>FreeBSD</b>: <span class="actual-version">1.48.0 (2018/04)</span></li>
           </ul>
           
           <br>
           <table>
           <tr>  
             <td bgcolor=#ddf width="80%">
-              Note for Windows: For last builds, Python engine is included. For old builds, download Python engine, with the same bitness x32/x64 as CudaText, at 
-              <a href="https://sourceforge.net/projects/cudatext/files/release/Windows/Python_engine/" target="_blank">SourceForge</a>
-              and unpack zip file to CudaText folder.
+              <b>Platform-specific notes</b>
+              <ul>
+              <li>Windows: Python engine is included.
+              <li>macOS: Python engine is not included. To use plugins, you must install Python 3.x from official <a href="http://www.python.org" target=_blank>python.org</a>.
+              <li>Linux, Linux-ARM, FreeBSD: Python engine is not included. To use plugins, see instruction inside "default.json" config about "pylib".
             </td>
-          </tr>  
-          <tr>
-            <td bgcolor=#cfc width="80%">
-              Note for Linux and macOS versions: Python engine is not shipped with CudaText.
-              To use plugins on macOS, you must install Python 3.x from official <a href="http://www.python.org" target=_blank>python.org</a>.
-              To use plugins on Linux, see instruction inside "default.json" config about "pylib".
-            </td>
-          </tr>
-          <tr>
-            <td bgcolor=#edd width="80%">
-              Linux-ARM version is for Raspberry Pi 3, board has Python engine, you must set option "pylib" there.
-            </td>
-          </tr>  
           </table>
           
           <br>
           <p>
-            Latest add-ons updates:
+            <b>Latest add-ons updates</b>
             <ul>
+              <li>[translation] Korean (new)
+              <li>[plugin] Terminal (new)
+              <li>[lexer] "Assembly FASM", "Assembly ARM" updated
+              <li>[lexer] Grub4Dos (new)
+              <li>[snippets] CSS Grid (new)
+              <li>[plugin] CudaExt (upd, commands published in Plugins menu)
+              <li>[lexer] Org-mode (new)
               <li>[plugin] Color Text (new)
               <li>[lexer] Java (upd)
               <li>[plugin] Fonts (new)
@@ -79,20 +75,15 @@
               <li>[plugin] Dash Help (new, ported from ST3)
               <li>[plugin] Font Awesome (new)
               <li>[plugin] HTML Tooltips (new)
-              <li>[plugin] Base Encoder plugin merged into plugin Encode
-              <li>[lexer] PkgBuild (new)
               <li>[plugin] Git Status (new)
-              <li>[lang] Polish translation (pl_PL)
-              <li>[plugin] Config Toolbar (upd, now can show buttons for specific lexers)
-              <li>[lexer] Monkey (new)
-              <li>[plugin] Detect Indent (new)
-              <li>[theme] Solarized Dark (new)
-              <li>[plugin] Vim Mode (new)
             </ul>
         </div>
       </div>
       <br>
-      <div class="footer" align="right">Copyright &copy; UVViewSoft</div>
+      <div class="footer" align="right">
+        Copyright &copy; UVViewSoft <br>
+        Help by <a href="https://teamfnd.ru/" title="TeamFND" target="_blank">TeamFND</a>
+      </div>
     </div>
   </body>
 </html>

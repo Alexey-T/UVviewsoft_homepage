@@ -4,6 +4,70 @@
   * changed
 
 
+1.48.0 (2018/04)
+
++ add: option "font_width", it gives new method to detect width of Unicode characters
++ add: improved plugin "Make Plugin", added code to read/write options
+- fix: restoring of scroll pos on opening file
+
+1.47.5 (2018/03)
+
++ add: API, support for plugin Terminal
++ add: improved auto-closing bracket: now when you type ")" after "(", closing bracket not duplicated (like PyCharm)
++ add: options "log_console", "log_debug"
++ add: option "unicode_full_width"
+* change: renamed option "allow_wide_chars" to "unicode_wide_allowed"
+
+1.47.0 (2018/03)
+
++ AddonManager/Install:
+  + add: full list is sorted by caregory+name
+  + add: allows to choose kind of addons, first item <Category>
+  * change: disabled fuzzy search 
+  * change: filter only by addon name (not by description)
+  
++ add: API
+- fix: "lexer dynamic hiliting" was broken after text editing
+- fix: command File/Reopen must keep bookmarks
+
+1.46.0 (2018/03)
+
+* change: dialog "Go to" simplified, now it's simple modal form, like Commands dialog
+- fix: with session reopened, if single file opened from shell, it wasn't activated
+- fix: "restore lexer styles" didn't work
+
+1.45.2 (2018/03)
+
++ add: minimap can show nice tooltip, when mouse cursor moves over minimap area (like KWrite)
++ add: option "minimap_tooltip_show"
++ add: option "minimap_tooltip_line_count"
++ add: option "minimap_tooltip_width"
+
+1.45.0 (2018/03)
+
++ add: avoid flicker of folded blocks (unfold-fold) when editing Markdown/Python/etc files
++ add: ProjectManager: option "Toolbar icons"; option uses icons in folder data/projtoolbaricons
++ add: sidebar button "hamburger", which shows copy of main menu as popup
++ add: command "show main menu as popup"
++ add: command "toggle main menu", menu showing is saved to history
++ add: lexer PowerShell: small fixes
+* change: TabsList: removed Config dialog
+
+1.44.0 (2018/03)
+
++ add: pictures: allow dragging, zooming by Ctrl+ mouse wheel (Command+ on macOS)
++ add: pictures: show zoom % in statusbar
++ add: save to session/history also numbered bookmarks (was: only usual bookmarks)
++ add: option "hide_horiz_scrollbar"
+
+1.43.0 (2018/02)
+
++ add: plugins can force show sidebar button, even if they don't run on start. New section in install.inf: [sidebar1] .. [sidebar3]. Used in plugins: ProjectManager, TabsList, FTP.
++ add: option "ui_toolbar_theme", with default theme
++ add: add-on type "toolbar theme", which installs icon set(s) for new option
++ add: improved look of "Go to bookmark" dialog
+- fix: scroll pos didn't restore for inactive tabs (e.g. in session)
+
 1.42.0 (2018/02)
 
 + add: reworked Code-Tree handling, fixed some crashes
@@ -670,7 +734,7 @@ fixes:
 
 1.3.23
 + lexer-overrides for hotkeys: option "For current lexer" in hotkey dialog (saved in "keys lexer NNN.json")
-+ find dialog: unprinted line-ends for mul-line input
++ find dialog: unprinted line-ends for multi-line input
 - fix range-check err
 
 1.3.22
@@ -729,14 +793,14 @@ fixes:
 - fix: dont open folder via command-line
 
 1.3.12
-+ rework indent of col-block: like Synwrite
++ rework indent of column-block: like SynWrite
 + theme "Sub" (@Alexey)
 * theme rename: "verbis" to "ebony" (@myCrack)
 + updated PHP completion-list (@Sanchez)
 - fix: Markdown tree
 
 1.3.11
-+ indent/unindent col-blocks too
++ indent/unindent column-blocks too
 + option mouse_wheel_zoom
 + command "enable/disable folding functionality"
 - fix: lexer Python (folding, update speed)
@@ -866,7 +930,7 @@ fixes:
 1.2.23
 - fix Addon Manager "Install" (SF.net blocked http)
 * change in API. Must update plugs: NumberedBookmarks, PythonIntel, CudaExt, Snippets
-+ added 120+ snippets for HTML. These mimic hehaviour of Synwrite's feature "SmartTagTabbing". You need plugin Snippets.
++ added 120+ snippets for HTML. These mimic hehaviour of SynWrite's feature "SmartTagTabbing". You need plugin Snippets.
 + autodelete markers in deleted selection
 + statusbar panel "msg" now autosized (can put "msg" to left)
 
@@ -918,7 +982,7 @@ fixes:
 + option "backup"
 + plugin autocomplete: reshow list if 1 char typed
 + improved "Make Plugin", can hide items in Plugins
-+ with col-block of zero width, can use Del/BkSp too
++ with column-block of zero width, can use Del/BkSp too
 + replace dialog key Ctrl+Alt+Enter: replace and don't find next
 * changed hotkeys in Replace
 * output panel uses dbl-click
@@ -943,17 +1007,17 @@ fixes:
 * removed lexers NSIS, Inno: to Addon Manager
 
 1.2.11
-+ addon-manager: config dialog (restart to see item); common install dialog; no more using of Synwrite wiki
++ AddonManager: config dialog (restart to see item); common install dialog; no more using of SynWrite wiki
 + "undo" undoes also "*" mark
 + API (better support for ExtTools)
 
 1.2.10
-+ addon-manager: items "Install plugin","Download all" (restart app 1-2 times to see menuitems)
++ AddonManager: items "Install plugin","Download all" (restart app 1-2 times to see menuitems)
 + option ui_lexers_grouped
 + option ui_reload_tail
 + add commands "tree: select next/prev/parent/etc node"
 + add command "tree: update tree" (need if sidebar hidden)
-+ use grouped-undo for mul-carets commands
++ use grouped-undo for multi-carets commands
 
 1.2.9
 * removed command "search - go to tab" (better doable in plugin)
@@ -965,7 +1029,7 @@ fixes:
 
 1.2.8
 + custom-dialog API
-+ dialog "Goto tab" shows paths
++ dialog "Go to tab" shows paths
 + output panel has hotkeys (wiki help topic)
 + console: char ";" at end of command: don't log
 - fix on pasting n lines at line-end
@@ -981,7 +1045,7 @@ fixes:
 - fix: grouped undo
 
 1.2.0
-+ commands for markers like Synwrite
++ commands for markers like SynWrite
 + support for Snippets plugin
 + option ui_non_text (prompt/ open/ don't open)
 + option ui_non_text_buffer
