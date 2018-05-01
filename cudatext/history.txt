@@ -4,6 +4,43 @@
   * changed
 
 
+1.51.0 (2018/04)
+
++ add: lite-lexers speed increased on very long lines     
++ add: file tab captions show folder specifier, if they have same file name (e.g. 2 tabs with index.js will show as "index.js - dir1", "index.js - dir2")
++ add: AddonManager: menu item "Download: show links" (to paste to download manager)
++ add: Find/Replace dialog:
+     + input fields are auto-sized
+     + separate dialog is resizable
+     * buttons have minimal width (for small screens)
+     + option "find_show_select_all"
+     + option "find_show_mark_all"
++ add: command "Scroll to begin"
++ add: command "Scroll to end"
++ add: command "Scroll page up"
++ add: command "Scroll page down"
+
+1.50.0 (2018/04)
+
++ add: restored deleted unicode options:
+       "unicode_proportional" (was "font_width", int, now boolean),
+       "unicode_wide_allowed",
+       "unicode_full_width"
++ add: dialog "File is maybe not text" gives additional buttons: viewer text mode, viewer unicode mode
++ add: option "ui_tab_disabled", to disable tabs (except first tab)
++ add: lexer Python: support for continuation char inside strings
+
+1.49.0 (2018/04)
+
++ add: detection of letter chars improved, now should work for all international alphabets
++ add: command "Options / Settings - default/user", to open 2 configs
++ add: config "default.json" opens as read-only
+* change: menu item "Groups" renamed to "=" and moved on top menu level
+* change: changed console output: now output is buffered, and result is flushed to UI control when app is idle
+* deleted option "font_width"
+* deleted option "unicode_wide_allowed"
+* deleted option "unicode_full_width"
+
 1.48.0 (2018/04)
 
 + add: option "font_width", it gives new method to detect width of Unicode characters
