@@ -4,6 +4,40 @@
   * changed
 
 
+1.53.0 (2018/05)
+
++ add: can specify different fonts for italic / bold / bold+italic font-styles:
+     + option "font_name_i"
+     + option "font_name_b"
+     + option "font_name_bi"
+     + option "font_size_i"
+     + option "font_size_b"
+     + option "font_size_bi"
++ add: option "autocomplete_up_down_at_edge"
++ add: option "find_suggest_in_selection"
++ add: command "toggle window always on top"
+* change: changed default of "font_ligatures" to true
+* change: deleted option "spacing_x"
+* change: deleted commands "show side panel: tabs list / project" (doable via plugin actions)
+
+1.52.0 (2018/05)
+
++ add: implemented editor tooltips over [...] folded marks
++ add: option "fold_tooltip_show"
++ add: option "ui_sidebar_on_right"
++ add: UI-theme "white"
++ add: lexer PowerShell improved
++ add: command "show side panel, project"
++ add: command "show side panel, tabs list"
+- fix: command "show side panel, code tree"
+- fix: TabsList plugin made "ghost panels" which overlap Code Tree
+
+1.51.2 (2018/05)
+
++ add: lexer PHP changed - to support PHP linters, and PHP file type icons. It is cloned from HTML lexer, with micro changes. Old PHP lexer renamed to PHP_.
++ add: lexer VBScript: improved folding
++ add: API
+
 1.51.0 (2018/04)
 
 + add: lite-lexers speed increased on very long lines     
