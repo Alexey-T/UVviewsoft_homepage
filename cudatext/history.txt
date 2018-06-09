@@ -4,6 +4,61 @@
   * changed
 
 
+1.56.3 (2018/06)
+
++ add: improved plugin "Insert Time": added command "Insert in default format", and command "Config" in "Options / Settings-plugins"
++ add: API
+
+1.56.0 (2018/06)
+
++ add: option "autocomplete_html_lexers"
++ add: option "autocomplete_css_lexers"
++ add: add-ons can require other add-on(s) via install.inf file
+- fix: HTML auto-completion must work in PHP files
+- fix: HTML and PHP snippets were not adjusted for new PHP/PHP_ lexers
+- fix: with "ui_one_instance":true, cannot open folder from 2nd instance (fixes by @vhanla, @fwhcat)
+- fix: after "trim spaces" actions, must fix caret pos, if after line ends
+
+1.55.1 (2018/05)
+
+- fix: initial window position was forced to first monitor
+- fix: app taskbar button was always on first monitor
+- fix: position of auto-complete listbox sometimes not ok
+
+1.55.0 (2018/05)
+
++ add: side panel and bottom panel can be floating (undocked).
+    + menu item "View - Toggle floating side panel"
+    + menu item "View - Toggle floating bottom panel"
+    + command "toggle floating side panel"
+    + command "toggle floating bottom panel"
++ add: floating tab groups 1/2/3. Now you can put tabs to 2nd monitor. To move tab to floating groups, in tab's context menu call "Move tab to group - Floating 1/2/3".
++ add: option "ui_float_groups_in_taskbar"
++ add: hotkey for "Command palette" set to famous Ctrl+Shift+P (second hotkey is F1)
+* change: renamed menu item "Help - Commands" to "Help - Command palette"
+* change: changed default of options "minimap_tooltip_show" and "fold_tooltip_show" to false
+- fix: minimap rendering for PHP
+- fix: lexers HTML, PHP (rule for &#nnnn;)
+- fix: lexer Markdown (rule for header)
+
+1.54.0 (2018/05)
+
++ announce:
+  new plugin CudaTree with sub-plugins, TreeHelpers. 
+  Most useful TreeHelpers: for Markdown, for PHP.
++ add: API
+* change: lexer PHP code tree simplified (hidden $vars, HTML tags, JS items)
+- fix: highlighting error in "lite lexers"
+- fix: issue when pasting block w/o EOL, at empty line
+
+1.53.4 (2018/05)
+
++ add: it's possble to show current char in the statusbar: statusbar options support new macros {char} {char_dec} {char_hex} {char_hex4}
+- fix: crash when AddonManager installs a lexer, with any lexers active in tabs
+- fix: crash when Lexer Library deletes a lexer active in tabs
+- fix: issue in LaTeX lexer with "dynamic hiliting"
+- fix: lexer VBScript
+
 1.53.0 (2018/05)
 
 + add: can specify different fonts for italic / bold / bold+italic font-styles:
