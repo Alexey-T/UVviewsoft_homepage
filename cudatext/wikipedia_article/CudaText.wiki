@@ -1,0 +1,69 @@
+{{SHORTDESC:text editor}}
+{{Infobox software
+| name                   = CudaText
+| logo                   = CudaText_logo.png
+| logo size              = 64px
+| screenshot             = CudaText_ScreenShot.png
+| caption                = <small>''A screenshot of CudaText on macOS showing a section of the CudaText source code.''</small>
+| collapsible            =
+| author                 =
+| developer              = Alexey Torgashin (alexey_t), Andrey Kvichanskiy (kvichans), matthias030
+| released               = 
+| latest release version = 1.57.0
+| latest release date    = {{Start date and age|2018|06|25}}<ref>http://uvviewsoft.com/cudatext/history.txt</ref>
+| programming language   = [[Object Pascal]] on [[Lazarus (IDE)|Lazarus]]
+| operating system       = Official packages for: [[Linux]] (x86, amd64, arm), [[macOS]], [[Microsoft Windows]] 32/64-bit, [[FreeBSD]]
+| platform               = [[IA-32]], [[x86-64]], [[ARM architecture|arm]]
+| size                   = 14 [[Mebibyte|MiB]] (macOS); <br>23 [[Mebibyte|MiB]] (Win64)
+| genre                  = [[Source code editor]]
+| license                = [[Mozilla Public License|MPL]] 2.0
+| website                = {{URL|http://uvviewsoft.com/cudatext/}}
+}}
+
+'''CudaText''', from [[Serbian language|Serbian]] ''čuda'' (“wonder”), is a [[Free software|free open source]] cross-platform native [[Graphical user interface|GUI]] text editor.
+
+==Feature List==
+* Syntax highlight for many languages: C, C++, Java, JavaScript, HTML, CSS, PHP, Python, Pascal, XML; more than [http://sourceforge.net/p/synwrite/wiki/Lexers%20list/ 160 lexers] exist
+* Code folding 
+* Code tree structure
+* Multi-carets
+* Multi-selections 
+* Search/replace with regex
+* Supports many encodings
+* Simple auto-completion (fixed list) for some lexers
+* Extendable via Python plugins
+* Command palette (Sublime style)
+* Configs in JSON
+* Made on ATSynEdit engine 
+
+Features for HTML/CSS coding: 
+
+* Smart auto-completion for HTML, CSS.
+* HTML tags completion with Tab-key (Snippets plugin).
+* HTML color codes underline.
+* View pictures (jpeg/png/bmp/ico).
+
+==See also==
+* [[List of text editors]]
+* [[Comparison of text editors]]
+* Popular competitors: [[Atom (text editor)|Atom]], [[BBEdit]], [[TextMate]], [[Notepad++]], [[Emacs]], [[vim (text editor)|vim]], [[Brackets (text editor)|Brackets]], [[Visual Studio Code]], and others.
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* [http://uvviewsoft.com/cudatext/ Official website]
+* [http://wiki.freepascal.org/CudaText Entry on the free pascal wiki]
+* {{GitHub|Alexey-T/CudaText|CudaText}}
+
+{{HTML editors}}
+
+[[Category:Free software programmed in Pascal]]
+[[Category:Cross-platform software]]
+[[Category:HTML editors]]
+[[Category:Linux text editors]]
+[[Category:MacOS text editors]]
+[[Category:Text editors]]
+[[Category:Free text editors]]
+[[Category:Windows text editors]]
+[[Category:XML editors]]
