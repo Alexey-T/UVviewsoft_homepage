@@ -8,19 +8,25 @@
 | collapsible            =
 | author                 =
 | developer              = Alexey Torgashin (alexey_t), Andrey Kvichanskiy (kvichans), matthias030
-| released               = 
+| released               = Registered on [https://sourceforge.net/projects/cudatext/ sf.net]: {{start date and age|2015|9|27}}
 | latest release version = 1.57.0
 | latest release date    = {{Start date and age|2018|06|25}}<ref>http://uvviewsoft.com/cudatext/history.txt</ref>
 | programming language   = [[Object Pascal]] on [[Lazarus (IDE)|Lazarus]]
 | operating system       = Official packages for: [[Linux]] (x86, amd64, arm), [[macOS]], [[Microsoft Windows]] 32/64-bit, [[FreeBSD]]
 | platform               = [[IA-32]], [[x86-64]], [[ARM architecture|arm]]
-| size                   = 14 [[Mebibyte|MiB]] (macOS); <br>23 [[Mebibyte|MiB]] (Win64)
+| size                   = about 14 [[Mebibyte|MiB]] (without Python)
 | genre                  = [[Source code editor]]
 | license                = [[Mozilla Public License|MPL]] 2.0
 | website                = {{URL|http://uvviewsoft.com/cudatext/}}
 }}
 
-'''CudaText''', from [[Serbian language|Serbian]] ''čuda'' (“wonder”), is a [[Free software|free open source]] cross-platform native [[Graphical user interface|GUI]] text editor.
+'''CudaText''', from [[Serbian language|Serbian]] ''čuda'' (“wonders”, {{IPA-sr|ʧuda|lang}}), is a [[Free software|free open source]] cross-platform native [[Graphical user interface|GUI]] text and source code editor.
+
+== The Core Program ==
+The core program (i.e. without [[Plug-in_(computing)|plug-in]]s) is written in [[Object Pascal]] on the [[Lazarus (IDE)|Lazarus IDE]], which results in low resource requirements and the availability of native builds for [[FreeBSD]], [[Linux]], [[macOS]] and [[Windows]]. The settings are stored in [[JSON]]-files, including one file for the standard settings and another one for user-altered settings, that override the values from the standard settings file.
+
+== Plug-in System and Python ==
+CudaText has a similar plug-in system like [[Sublime Text]] or [[Atom (text editor)|Atom]]. It is based on [[Python (programming language)|Python]] (version 3.6 as of July 2018). In order to make use of the plug-ins, Python has to be downloaded and installed separately. On macOS the package including the 32-bit version is required. Also CudaText's ''Check for updates'' function requires Python.
 
 ==Feature List==
 * Syntax highlight for many languages: C, C++, Java, JavaScript, HTML, CSS, PHP, Python, Pascal, XML; more than [http://sourceforge.net/p/synwrite/wiki/Lexers%20list/ 160 lexers] exist
@@ -46,15 +52,21 @@ Features for HTML/CSS coding:
 ==See also==
 * [[List of text editors]]
 * [[Comparison of text editors]]
-* Popular competitors: [[Atom (text editor)|Atom]], [[BBEdit]], [[TextMate]], [[Notepad++]], [[Emacs]], [[vim (text editor)|vim]], [[Brackets (text editor)|Brackets]], [[Visual Studio Code]], and others.
+* [[List of HTML editors]] 
+* [[Comparison of HTML editors]]
+* [[Comparison of hex editors]]
 
 ==References==
 {{Reflist|30em}}
 
 ==External links==
 * [http://uvviewsoft.com/cudatext/ Official website]
-* [http://wiki.freepascal.org/CudaText Entry on the free pascal wiki]
+* [http://wiki.freepascal.org/CudaText Entry on the Free Pascal wiki]
+* [https://itsfoss.com/cudatext-code-editor/ Announce on It's FOSS]
 * {{GitHub|Alexey-T/CudaText|CudaText}}
+* [https://www.reddit.com/r/learnprogramming/comments/8o058w/text_editorcudatext_great_text_editor/ Reddit]
+* [https://mac360.com/2016/01/a-tale-of-4-free-mac-text-editors/ A Tale Of 4 Free Mac Text Editors] on mac360.com
+* [https://www.macupdate.com/app/mac/55256/cudatext User reviews in the comment section of MacUpdate.com]
 
 {{HTML editors}}
 
