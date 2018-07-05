@@ -20,13 +20,13 @@
 | website                = {{URL|http://uvviewsoft.com/cudatext/}}
 }}
 
-'''CudaText''', from [[Serbian language|Serbian]] ''čuda'' (“wonders”, {{IPA-sr|ʧuda|lang}}), is a [[Free software|free open source]] cross-platform native [[Graphical user interface|GUI]] text and source code editor.
+'''CudaText''', from [[Serbo-Croatian|Bosnian-Croatian-Montenegrin-Serbian]] ''čuda'' (“wonders” or “miracles”, [[International Phonetic Alphabet|IPA]]: [ʧuda]), is a [[Free software|free open source]] cross-platform native [[Graphical user interface|GUI]] text and source code editor.
 
 == The Core Program ==
 The core program (i.e. without [[Plug-in_(computing)|plug-in]]s) is written in [[Object Pascal]] on the [[Lazarus (IDE)|Lazarus IDE]], which results in low resource requirements and the availability of native builds for [[FreeBSD]], [[Linux]], [[macOS]] and [[Windows]]. The settings are stored in [[JSON]]-files, including one file for the standard settings and another one for user-altered settings, that override the values from the standard settings file.
 
 == Plug-in System and Python ==
-CudaText has a similar plug-in system like [[Sublime Text]] or [[Atom (text editor)|Atom]]. It is based on [[Python (programming language)|Python]] (version 3.6 as of July 2018). In order to make use of the plug-ins, Python has to be downloaded and installed separately. On macOS the package including the 32-bit version is required. Also CudaText's ''Check for updates'' function requires Python.
+CudaText has a similar plug-in system like [[Sublime Text]] or [[Atom (text editor)|Atom]]. It is based on [[Python (programming language)|Python]] (version 3.6 as of July 2018). In order to make use of the plug-ins, Python has to be installed. The macOS-build doesn't include it, so it has to be downladed and installed separately. On macOS the package including the 32-bit version is required. Also CudaText's ''Check for updates'' function requires Python.
 
 ==Feature List==
 * Syntax highlight for many languages: C, C++, Java, JavaScript, HTML, CSS, PHP, Python, Pascal, XML; more than [http://sourceforge.net/p/synwrite/wiki/Lexers%20list/ 160 lexers] exist
@@ -41,6 +41,7 @@ CudaText has a similar plug-in system like [[Sublime Text]] or [[Atom (text edit
 * Command palette (Sublime style)
 * Configs in JSON
 * Made on ATSynEdit engine 
+* Includes a hex viewer
 
 Features for HTML/CSS coding: 
 
@@ -79,3 +80,5 @@ Features for HTML/CSS coding:
 [[Category:Free text editors]]
 [[Category:Windows text editors]]
 [[Category:XML editors]]
+[[Category:Unix text editors]]
+[[Category:Pascal software]]
