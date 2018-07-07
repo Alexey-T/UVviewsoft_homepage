@@ -23,10 +23,31 @@
 '''CudaText''', from [[Serbo-Croatian|Bosnian-Croatian-Montenegrin-Serbian]] ''čuda'' (“wonders” or “miracles”, [[International Phonetic Alphabet|IPA]]: [ʧuda]), is a [[Free software|free open source]] cross-platform native [[Graphical user interface|GUI]] text and source code editor.
 
 == The Core Program ==
-The core program (i.e. without [[Plug-in_(computing)|plug-in]]s) is written in [[Object Pascal]] on the [[Lazarus (IDE)|Lazarus IDE]], which results in low resource requirements and the availability of native builds for [[FreeBSD]], [[Linux]], [[macOS]] and [[Windows]]. The settings are stored in [[JSON]]-files, including one file for the standard settings and another one for user-altered settings, that override the values from the standard settings file.
+The core program (i.e. without add-ons/[[Plug-in_(computing)|plug-in]]s) is written in [[Object Pascal]] on the [[Lazarus (IDE)|Lazarus IDE]], which results in low resource requirements and the availability of native builds for [[FreeBSD]], [[Linux]], [[macOS]] and [[Windows]]. The settings are stored in [[JSON]]-files, including one file for the standard settings and another one for user-altered settings, that override the values from the standard settings file.
 
-== Plug-in System and Python ==
-CudaText has a similar plug-in system like [[Sublime Text]] or [[Atom (text editor)|Atom]]. It is based on [[Python (programming language)|Python]] (version 3.6 as of July 2018). In order to make use of the plug-ins, Python has to be installed. The macOS-build doesn't include it, so it has to be downladed and installed separately. On macOS the package including the 32-bit version is required. Also CudaText's ''Check for updates'' function requires Python.
+== Add-on System and Python ==
+CudaText has a similar add-on system like [[Sublime Text]] or [[Atom (text editor)|Atom]]. It is based on [[Python (programming language)|Python]] (version 3.6 as of July 2018). In order to make use of theadd-ons, Python has to be installed. The macOS-build doesn't include it, so it has to be downloaded and installed separately. On macOS the package including the 32-bit version is required. Also CudaText's ''Check for updates'' function requires Python.
+
+=== Types of Add-ons ===
+Cudatext has (for July 2018) 11 types of add-ons:
+* codetreeicons
+* filetypeicons
+* lexer
+* linter
+* plugin
+* sidebartheme
+* snippets
+* theme
+* toolbartheme
+* translation
+* treehelper
+
+=== Examples ===
+==== Plug-in: Sync_Scroll ====
+Since July 2018 CudaText has a sync [[Scrolling|scroll]] plug-in. This plug-in allows parallel scrolling through two text files with synchronised lines, i.e. two tabs in different vertical or horizontal groups display always the lines with the same numbers. This feature is useful for manual comparisons of two files (manual [[diff]]) and quite indispensible for manually annotating [[parallel text]] corpora.
+
+==== Plug-in: Text_Statistics ====
+The text statistics plug-in is a tool for linguists. It displays the number of lines, words, letters and all characters as well as the 30 most common words and the ''sentences with n words'', i.e. a short statistic of the number of sentences with 1 to 9 elements.
 
 ==Feature List==
 * Syntax highlight for many languages: C, C++, Java, JavaScript, HTML, CSS, PHP, Python, Pascal, XML; more than [http://sourceforge.net/p/synwrite/wiki/Lexers%20list/ 160 lexers] exist
@@ -55,19 +76,19 @@ Features for HTML/CSS coding:
 * [[Comparison of text editors]]
 * [[List of HTML editors]] 
 * [[Comparison of HTML editors]]
-* [[Comparison of hex editors]]
 
 ==References==
 {{Reflist|30em}}
 
 ==External links==
 * [http://uvviewsoft.com/cudatext/ Official website]
-* [http://wiki.freepascal.org/CudaText Entry on the Free Pascal wiki]
+* [http://wiki.freepascal.org/CudaText Entry on the Free Pascal wiki including a very detailed description]
 * [https://itsfoss.com/cudatext-code-editor/ Announce on It's FOSS]
 * {{GitHub|Alexey-T/CudaText|CudaText}}
 * [https://www.reddit.com/r/learnprogramming/comments/8o058w/text_editorcudatext_great_text_editor/ Reddit]
 * [https://mac360.com/2016/01/a-tale-of-4-free-mac-text-editors/ A Tale Of 4 Free Mac Text Editors] on mac360.com
 * [https://www.macupdate.com/app/mac/55256/cudatext User reviews in the comment section of MacUpdate.com]
+* [https://lazplanet.blogspot.com/2018/05/spotlight-cudatext-hot-replacement-for.html#more Spotlight: CudaText - A Hot Replacement for Sublime Text, Written in Lazarus]
 
 {{HTML editors}}
 
