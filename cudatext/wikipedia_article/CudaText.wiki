@@ -7,7 +7,7 @@
 | caption                = <small>''A screenshot of CudaText on macOS showing a section of the CudaText source code.''</small>
 | collapsible            =
 | author                 =
-| developer              = Alexey Torgashin (alexey_t), Andrey Kvichanskiy (kvichans), matthias030
+| developer              = Alexey Torgashin (alexey_t), Andrey Kvichanskiy (kvichans), Matthias Eberhardt (matthias030)
 | released               = Registered on [https://sourceforge.net/projects/cudatext/ sf.net]: {{start date and age|2015|9|27}}
 | latest release version = 1.57.0
 | latest release date    = {{Start date and age|2018|06|25}}<ref>http://uvviewsoft.com/cudatext/history.txt</ref>
@@ -20,7 +20,7 @@
 | website                = {{URL|http://uvviewsoft.com/cudatext/}}
 }}
 
-'''CudaText''', from [[Serbo-Croatian|Bosnian-Croatian-Montenegrin-Serbian]] ''čuda'' (“wonders” or “miracles”, [[International Phonetic Alphabet|IPA]]: [ʧuda]), is a [[Free software|free open source]] cross-platform native [[Graphical user interface|GUI]] text and source code editor.
+'''CudaText''', from [[Serbo-Croatian|Bosnian-Croatian-Montenegrin-Serbian]] ''čuda'' (“wonders” or “miracles”, [[International Phonetic Alphabet|IPA]]: [ʧuda]), is a [[Free software|free open source]] cross-platform native [[Graphical user interface|GUI]] text and source code editor. CudaText supersedes its predecessor ''SynWrite'', which is not actively developed anymore.
 
 == The Core Program ==
 The core program (i.e. without add-ons/[[Plug-in_(computing)|plug-in]]s) is written in [[Object Pascal]] on the [[Lazarus (IDE)|Lazarus IDE]], which results in low resource requirements and the availability of native builds for [[FreeBSD]], [[Linux]], [[macOS]] and [[Windows]]. The settings are stored in [[JSON]]-files, including one file for the standard settings and another one for user-altered settings, that override the values from the standard settings file.
@@ -30,19 +30,19 @@ CudaText has a similar add-on system like [[Sublime Text]] or [[Atom (text edito
 
 === Types of Add-ons ===
 Cudatext has (for July 2018) 11 types of add-ons:
-* codetreeicons
-* filetypeicons
+* code tree icons
+* file-type icons
 * lexer
 * linter
 * plugin
-* sidebartheme
+* sidebar theme
 * snippets
-* theme
-* toolbartheme
+* color theme
+* toolbar theme
 * translation
-* treehelper
+* tree helper
 
-=== Examples ===
+=== Examples of Add-ons ===
 ==== Plug-in: Sync_Scroll ====
 Since July 2018 CudaText has a sync [[Scrolling|scroll]] plug-in. This plug-in allows parallel scrolling through two text files with synchronised lines, i.e. two tabs in different vertical or horizontal groups display always the lines with the same numbers. This feature is useful for manual comparisons of two files (manual [[diff]]) and quite indispensible for manually annotating [[parallel text]] corpora.
 
@@ -50,26 +50,27 @@ Since July 2018 CudaText has a sync [[Scrolling|scroll]] plug-in. This plug-in a
 The text statistics plug-in is a tool for linguists. It displays the number of lines, words, letters and all characters as well as the 30 most common words and the ''sentences with n words'', i.e. a short statistic of the number of sentences with 1 to 9 elements.
 
 ==Feature List==
-* Syntax highlight for many languages: C, C++, Java, JavaScript, HTML, CSS, PHP, Python, Pascal, XML; more than [http://sourceforge.net/p/synwrite/wiki/Lexers%20list/ 160 lexers] exist
+* Syntax highlighting for all common languages: C, C++, Java, JavaScript, HTML, CSS, PHP, Python, XML; it is supported by "lexers"; more than [http://sourceforge.net/p/synwrite/wiki/Lexers%20list/ 200 lexers] is created
 * Code folding 
-* Code tree structure
+* Code tree, ie list of functions/classes/etc in the side panel
 * Multi-carets
 * Multi-selections 
-* Search/replace with regex
+* Search/replace with regular expressions
 * Supports many encodings
 * Simple auto-completion (fixed list) for some lexers
 * Extendable via Python plugins
-* Command palette (Sublime style)
-* Configs in JSON
-* Made on ATSynEdit engine 
-* Includes a hex viewer
+* Command palette (mimics Sublime Text behaviour)
+* Configs in JSON format
+* Based on ATSynEdit engine 
+* Includes hex viewer for files on inlimited size
 
 Features for HTML/CSS coding: 
 
 * Smart auto-completion for HTML, CSS.
 * HTML tags completion with Tab-key (Snippets plugin).
 * HTML color codes underline.
-* View pictures (jpeg/png/bmp/ico).
+* Viewer for picture files (jpeg/png/bmp/ico).
+* Tooltip preview for picture files and HTML entities (plugin).
 
 ==See also==
 * [[List of text editors]]
@@ -82,13 +83,6 @@ Features for HTML/CSS coding:
 
 ==External links==
 * [http://uvviewsoft.com/cudatext/ Official website]
-* [http://wiki.freepascal.org/CudaText Entry on the Free Pascal wiki including a very detailed description]
-* [https://itsfoss.com/cudatext-code-editor/ Announce on It's FOSS]
-* {{GitHub|Alexey-T/CudaText|CudaText}}
-* [https://www.reddit.com/r/learnprogramming/comments/8o058w/text_editorcudatext_great_text_editor/ Reddit]
-* [https://mac360.com/2016/01/a-tale-of-4-free-mac-text-editors/ A Tale Of 4 Free Mac Text Editors] on mac360.com
-* [https://www.macupdate.com/app/mac/55256/cudatext User reviews in the comment section of MacUpdate.com]
-* [https://lazplanet.blogspot.com/2018/05/spotlight-cudatext-hot-replacement-for.html#more Spotlight: CudaText - A Hot Replacement for Sublime Text, Written in Lazarus]
 
 {{HTML editors}}
 
