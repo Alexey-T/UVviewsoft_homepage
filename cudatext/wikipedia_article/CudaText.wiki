@@ -7,10 +7,10 @@
 | caption                = <small>''A screenshot of CudaText on macOS showing a section of the CudaText source code.''</small>
 | collapsible            =
 | author                 =
-| developer              = Alexey Torgashin (alexey_t), Andrey Kvichanskiy (kvichans), Matthias Eberhardt (matthias030)
+| developer              = Alexey Torgashin (alexey_t), Andrey Kvichanskiy (kvichans)
 | released               = Registered on [https://sourceforge.net/projects/cudatext/ sf.net]: {{start date and age|2015|9|27}}
-| latest release version = 1.57.0
-| latest release date    = {{Start date and age|2018|06|25}}<ref>http://uvviewsoft.com/cudatext/history.txt</ref>
+| latest release version = 1.63.0
+| latest release date    = {{Start date and age|2018|10|03}}<ref>http://uvviewsoft.com/cudatext/history.txt</ref>
 | programming language   = [[Object Pascal]] on [[Lazarus (IDE)|Lazarus]]
 | operating system       = Official packages for: [[Linux]] (x86, amd64, arm), [[macOS]], [[Microsoft Windows]] 32/64-bit, [[FreeBSD]]
 | platform               = [[IA-32]], [[x86-64]], [[ARM architecture|arm]]
@@ -23,28 +23,28 @@
 '''CudaText''', from [[Serbo-Croatian|Bosnian-Croatian-Montenegrin-Serbian]] ''čuda'' (“wonders” or “miracles”, [[International Phonetic Alphabet|IPA]]: [ʧuda]), is a [[Free software|free open source]] cross-platform native [[Graphical user interface|GUI]] text and source code editor. CudaText supersedes its predecessor ''SynWrite'', which is not actively developed anymore.
 
 == The Core Program ==
-The core program (i.e. without add-ons/[[Plug-in_(computing)|plug-in]]s) is written in [[Object Pascal]] on the [[Lazarus (IDE)|Lazarus IDE]], which results in low resource requirements and the availability of native builds for [[FreeBSD]], [[Linux]], [[macOS]] and [[Windows]]. The settings are stored in [[JSON]]-files, including one file for the standard settings and another one for user-altered settings, that override the values from the standard settings file.
+The core program (i.e. without add-ons/[[Plug-in (computing)|plug-in]]s) is written in [[Object Pascal]] on the [[Lazarus (IDE)|Lazarus IDE]], which results in low resource requirements and the availability of native builds for [[FreeBSD]], [[Linux]], [[macOS]] and [[Windows]]. The settings are stored in [[JSON]]-files, including one file for the standard settings and another one for user-altered settings, that override the values from the standard settings file.
 
 == Add-on System and Python ==
-CudaText has a similar add-on system like [[Sublime Text]] or [[Atom (text editor)|Atom]]. It is based on [[Python (programming language)|Python]] (version 3.6 as of July 2018). In order to make use of theadd-ons, Python has to be installed. The macOS-build doesn't include it, so it has to be downloaded and installed separately. On macOS the package including the 32-bit version is required. Also CudaText's ''Check for updates'' function requires Python.
+CudaText has a similar add-on system like [[Sublime Text]] or [[Atom (text editor)|Atom]]. It is based on [[Python (programming language)|Python]] (version 3.3 or newer). On Windows, Python engine is shipped with the program. On Unix-based systems, in order to make use of add-ons, Python has to be installed. The macOS doesn't include it, so it has to be downloaded and installed separately. On macOS the package including the 32-bit version is required. Also CudaText's ''Check for updates'' function requires Python.
 
 === Types of Add-ons ===
-Cudatext has (for July 2018) 11 types of add-ons:
-* code tree icons
-* file-type icons
-* lexer
-* linter
-* plugin
-* sidebar theme
-* snippets
-* color theme
-* toolbar theme
-* translation
-* tree helper
+CudaText has (for July 2018) 11 types of add-ons:
+* Code tree icons: Icon set, which is used in Code Tree panel.
+* File-type icons: Icon set, which is used in Project Manager panel and on tab captions.
+* Toolbar theme: Icon set, which is used on horizontal toolbar.
+* Sidebar theme: Icon set, which is used on sidebar.
+* Lexer: Data file to support syntax highlighting for some language.
+* Plugin: Any Python-based extension.
+* Snippets: Set of files, which adds code "snippets" for some language, used with Snippets plugin.
+* Color theme: Set of colors for CudaText interface and its lexers.
+* Translation: Data file to support app localization to some language.
+* Linter: Sub-plugin for CudaLint plugin, which enables linting (source code checking) for some language.
+* Tree helper: Sub-plugin for CudaTree plugin, which shows Code Tree structure for some language.
 
 === Examples of Add-ons ===
 ==== Plug-in: Sync_Scroll ====
-Since July 2018 CudaText has a sync [[Scrolling|scroll]] plug-in. This plug-in allows parallel scrolling through two text files with synchronised lines, i.e. two tabs in different vertical or horizontal groups display always the lines with the same numbers. This feature is useful for manual comparisons of two files (manual [[diff]]) and quite indispensible for manually annotating [[parallel text]] corpora.
+Since July 2018 CudaText has a sync [[Scrolling|scroll]] plug-in. This plug-in allows parallel scrolling through two text files with synchronised lines, i.e. two tabs in different vertical or horizontal groups display always the lines with the same numbers. This feature is useful for manual comparisons of two files (manual [[diff]]) and quite indispensable for manually annotating [[parallel text]] corpora.
 
 ==== Plug-in: Text_Statistics ====
 The text statistics plug-in is a tool for linguists. It displays the number of lines, words, letters and all characters as well as the 30 most common words and the ''sentences with n words'', i.e. a short statistic of the number of sentences with 1 to 9 elements.
@@ -52,7 +52,7 @@ The text statistics plug-in is a tool for linguists. It displays the number of l
 ==Feature List==
 * Syntax highlighting for all common languages: C, C++, Java, JavaScript, HTML, CSS, PHP, Python, XML; it is supported by "lexers"; more than [http://sourceforge.net/p/synwrite/wiki/Lexers%20list/ 200 lexers] is created
 * Code folding 
-* Code tree, ie list of functions/classes/etc in the side panel
+* Code tree, i.e. list of functions/classes/etc in the side panel
 * Multi-carets
 * Multi-selections 
 * Search/replace with regular expressions
@@ -64,7 +64,7 @@ The text statistics plug-in is a tool for linguists. It displays the number of l
 * Based on ATSynEdit engine 
 * Includes hex viewer for files on inlimited size
 
-Features for HTML/CSS coding: 
+Features for HTML/CSS coding:
 
 * Smart auto-completion for HTML, CSS.
 * HTML tags completion with Tab-key (Snippets plugin).
@@ -88,6 +88,7 @@ Features for HTML/CSS coding:
 
 [[Category:Free software programmed in Pascal]]
 [[Category:Cross-platform software]]
+[[Category:Cross-platform free software]]
 [[Category:HTML editors]]
 [[Category:Linux text editors]]
 [[Category:MacOS text editors]]
