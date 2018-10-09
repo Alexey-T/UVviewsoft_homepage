@@ -39,16 +39,16 @@
           
           <table style="border-collapse: collapse; border-style: none; width: 380px;" >
               <tr>
-                  <td><li>Windows</td>  <td>x86, x64</td>  <td>1.60.5 (2018/09)</td>
+                  <td><li>Windows</td>  <td>x86, x64</td>  <td>1.63.0 (2018/10)</td>
               </tr>
               <tr>
-                  <td><li>Linux</td>  <td>x64, ARM (GTK2, Qt4)</td>  <td>1.60.5 (2018/09)</td>
+                  <td><li>Linux</td>  <td>x64, ARM (GTK2, Qt4)</td>  <td>1.63.0 (2018/10)</td>
               </tr>
               <tr>
-                  <td><li>macOS</td>  <td>x86, x64 (Carbon, Cocoa)</td>  <td>1.60.0 (2018/08)</td>
+                  <td><li>macOS</td>  <td>x86 (Carbon)</td>  <td>1.63.0 (2018/10)</td>
               </tr>
               <tr>
-                  <td><li>FreeBSD</td>  <td>x86, x64 (GTK2)</td>  <td>1.60.0 (2018/08)</td>
+                  <td><li>FreeBSD</td>  <td>x86, x64 (GTK2)</td>  <td>1.63.0 (2018/10)</td>
               </tr>
           </table>
           
@@ -60,7 +60,8 @@
               <ul>
               <li>Windows: Python engine is included.
               <li>macOS: Python engine is not included. To use plugins, you must install Python 3.x from official <a href="http://www.python.org" target=_blank>python.org</a>.
-              <li>Linux, FreeBSD: Python engine is not included. To use plugins, see instruction inside "default.json" config about "pylib".
+              <li>Linux, FreeBSD: Python engine is not included. To use plugins, see instruction inside "default.json" config about "pylib".<br>
+              For Debian/Ubuntu, you need .deb package, it adds CudaText shortcut to the Applications list, and adds "cudatext" to system path. For others, get .xz package, unpack it to ~/CudaText, and create shortcut by hands.
             </td>
           </table>
           
@@ -68,6 +69,8 @@
           <p>
             <b>Latest add-ons updates</b>
             <ul>
+              <li>[translation] SK
+              <li>[translation] CZ
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2137" target="_blank">Auto Replace</a> (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2132" target="_blank">Pascal/C++ Format</a> (new)
               <li>[lexer] GDScript (new)
