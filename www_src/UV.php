@@ -153,6 +153,7 @@
           </td>
         </tr>
 
+        <!--
         <tr>
           <td class="caption_app">
             Partners
@@ -160,20 +161,10 @@
         </tr>
 
         <tr>
-          <td class="text" height="8">
+          <td class="text" height="20">
           </td>
         </tr>
-
-        <tr>
-          <td class="text" align="center">
-            <a href="http://3d2f.com/smartreviews/0-964-universal-viewer-an-all-inclusive-approach-to-file-viewing-read.shtml" target="_blank">Review at 3d2f</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="text" height="16">
-          </td>
-        </tr>
+        -->
 
       </table>
     </td>
@@ -216,7 +207,7 @@
   </tr>
   <tr>
     <td class="text" align="center">
-      Copyright &copy; UVViewSoft <br>
+      Copyright &copy; UVviewsoft <br>
       <a href="privacy.htm">Privacy Policy</a>
       <!--<a href="lic.htm">License</a>-->
     </td>
