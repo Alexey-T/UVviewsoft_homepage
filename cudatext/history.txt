@@ -3,6 +3,27 @@
   - fixed
   * changed
 
+1.72.0 (2019/01)
+
++ add: command "folding: fold block at current line" allows caret inside all block lines (not only block start)
++ add: option "find_show_extract", allows to hide Extract button
++ add: API (gaps improved)
+* change: deleted 3 commands "folding: fold range....", because they were duplicated by commands "folding: fold block...."
+- fix: caret pos after commands "scroll line up/down" was wrong sometimes
+- fix: trying to fix Linux/Mac issue when caret stops blinking sometimes 
+
+* change: lexer removed to addons: C#
+* change: lexer removed to addons: Perl
+* change: lexer removed to addons: Tcl
+* change: lexer removed to addons: Haskell
+* change: lexer removed to addons: Apache config
+* change: lexer removed to addons: Delphi resources
++ add: lexer Python improved: fix numbers with "_"
++ add: lexer Bash improved: highlight keywords in separate style; highlight func names, "-params"; highlight half of symbols in new style
++ add: lexer Ruby improved: disabled regex rule (temporary?); fixed heredoc rule; highlight "par:" and ":par"; highlight octals/decimals; highlight more std funcs
++ add: lexer C# improved: highlight modifiers in separate style; add 'await'/'async'
++ add: lexers C, C++ fixed
+
 1.71.0 (2019/01)
 
 + add: dialog Find has new Extract button: it finds all matches in RegEx mode and puts them to a new document (plugin Extract Strings also does this)
