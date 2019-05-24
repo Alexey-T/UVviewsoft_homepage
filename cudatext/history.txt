@@ -4,6 +4,71 @@
   * changed
 
 
+1.81.0 (2019/05)
+
++ add: option "indent_auto_rule": RegEx which allows to make additional indent on pressing Enter
++ add: program can use _default_ lexer-specific configs from folder settings_default
++ add: few default lexer configs for "tab_size"/"tab_spaces": C, C++, CSS, JS, JSON, Pascal, Python...
++ add: few default lexer configs for "indent_auto_rule": Lua, Pascal, Python, Ruby (not needed for C-like lexers)
++ add: dialogs "Lexer library", "Lexer properties" made resizable, they save size
++ add: program saves to session name of current side-panel and bottom-panel
+* change: 3 submenus in the Options menu - Themes-UI, Themes-Syntax, Translations - were replaced with menu-dialogs; added 3 commands to call them
+- fix: plugin "Numbered Bookmarks" had incorrect bookmark color on dark themes
+- fix: detection of "modified" state for 2nd file in pair-tab (e.g. default.json+user.json)
+
+1.80.2 (2019/05)
+
++ add: double-click now selects a) group of spaces, b) group of symbol chars (like EmEditor)
++ add: lexers C, C++: show "typedef ...{...}" in code-tree
++ add: lexer JSDoc: highlight multiline typedefs {{...}}
+- fix: crash during code-tree filling
+- fix: macOS: bottom panel splitter moved bad
+
+1.80.0 (2019/05)
+
++ add: UI can now be scaled freely, independing of OS high-DPI mode. Added options "ui_scale", "ui_scale_font".
++ add: more UI elements support scaling (minimap, micromap, splitters etc)
++ add: Project Manager supports "toolbar icons" of any size (before: only 16x16). Icon set "Mui" (icon size: 20, 24, 32, 48) was added to add-ons.
++ add: menu items in "Edit" menu are auto disabled (Undo, Redo, Copy, Cut, Paste, Delete)
++ add: don't show warning "File is maybe not text" because of char(27)
++ add: dialog "Save tabs?" saves its size
++ add: dialog "Char map" saves its size
+* change: deleted option "ui_statusbar_height"
+* change: deleted option "numbers_font_size"
+* change: deleted option "ruler_font_size"
+* change: deleted option "ruler_size"
+* change: deleted option "micromap_width"
+- fix: bugs with vertical scrollbar, it wasn't auto moved
+
+1.79.2 (2019/04)
+
++ add: option "ruler_mark_caret"
+* change: plugin file "install.inf": CPU names for "os=" line changed to longer names like in Free Pascal: i386, x86_64, arm, sparc
+- fix: bug fixes
+
+1.79.0 (2019/04)
+
++ add: option "zebra"
++ add: API
++ add: lexers C/C++: improved rules for float/int/hex numbers
+- fix: few bugs with vertical sync-scrolling in Differ plugin
+- fix: scrollbars did scroll by 1 pixel on clicking arrows, must scroll faster by char size
+- fix: bug with wrong caret pos after pasting multiline block on empty line
+
+1.78.5 (2019/04)
+
++ add: improve behaviour of option "auto_close_brackets":true, now it works with multi-selections too (brackets surround multi-selections)
++ add: on mouse selection, editor draws dotted frame to show mouse rectangle
++ add: option "show_mouse_sel_frame"
++ add: toolbar button "Options Editor" (calls Options Editor plugin dialog)
++ add: toolbar theme icon "opt.png"
++ add: command "selection: remove first caret"
++ add: command "selection: remove last caret"
+* change: changed command name "expand selection to word" to more concrete "add next occurrence of selected word"
+- fix: crash with plugin Config Menu and changed translation
+- fix: bug in lexer engine for Unicode, which caused wrong tokenizing of Unicode names in Clojure lexer
+- fix: Linux: must not set dialogs (e.g. Command Palette) border-style to "none", this causes dialog to have "system always on top" style
+
 1.78.0 (2019/04)
 
 + add: API for EditorConfig plugin

@@ -45,16 +45,19 @@
           
           <table style="border-collapse: collapse; border-style: none; width: 380px;" >
               <tr>
-                  <td><li>Windows</td>  <td>x86, x64</td>                 <td>1.78.0 (2019/04)</td>
+                  <td><li>Windows</td>  <td>x86, x64</td>                 <td>1.81.0 (2019/05)</td>
               </tr>
               <tr>
-                  <td><li>Linux</td>  <td>x86, x64, ARM (GTK2, Qt4)</td>  <td>1.78.0 (2019/04)</td>
+                  <td><li>Linux</td>  <td>x86, x64, ARM (gtk2, qt4)</td>  <td>1.81.0 (2019/05)</td>
               </tr>
               <tr>
-                  <td><li>macOS</td>   <td></td>                          <td>1.78.0 (2019/04)</td>
+                  <td><li>macOS</td>   <td></td>                          <td>1.81.0 (2019/05)</td>
               </tr>
               <tr>
-                  <td><li>FreeBSD</td>  <td>x86, x64 (GTK2)</td>          <td>1.78.0 (2019/04)</td>
+                  <td><li>FreeBSD</td>  <td>x86, x64 (gtk2)</td>          <td>1.81.0 (2019/05)</td>
+              </tr>
+              <tr>
+                  <td><li>Solaris</td>  <td>x64 (gtk2)</td>               <td>1.81.0 (2019/05)</td>
               </tr>
           </table>
           
@@ -66,7 +69,7 @@
               <ul>
               <li>Windows: Python engine is included.
               <li>macOS: Python engine is not included. To use plugins, you must install Python 3.x from official <a href="http://www.python.org" target=_blank>python.org</a>.
-              <li>Linux, FreeBSD: Python engine is not included. To use plugins, see instruction inside "default.json" config about "pylib".<br>
+              <li>Linux, FreeBSD, Solaris: Python engine is not included. To use plugins, see instruction inside "default.json" config about "pylib".<br>
               For Debian/Ubuntu, you need .deb package, it adds CudaText shortcut to the Applications list, and adds "cudatext" to system path. For others, get .xz package, unpack it to ~/CudaText, and create shortcut by hands.
             </td>
           </table>
@@ -75,6 +78,11 @@
           <p>
             <b>Latest add-ons updates</b>
             <ul>
+              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2247" target="_blank">HTML Live Preview (Windows only)</a> (new)
+              <li>[plugin] Show Unicode Name (new)
+              <li>[plugin] VBScript Format (new)
+              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2240" target="_blank">JS Format, JSON Stringify, CSS/SCSS/SASS/LESS Format</a> (new)
+              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2234" target="_blank">IP Address Helper</a> (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2227" target="_blank">Remove Greek Accents</a> (new)
               <li>[icons] project toolbar icons Axialis (new)
               <li>[icons] updated all Google and Axialis icon themes (upd)
@@ -82,32 +90,16 @@
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2218" target="_blank">CSS Inspector</a> (new)
               <li>[syntax-theme] NightOwl (new)
               <li>[syntax-theme] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2215" target="_blank">Alabaster</a> (new)
-              <li>[linter] Haskell using GHC (new)
-              <li>[toolbar theme] Lazarus (new)
-              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2210" target="_blank">Snippet Panel</a> (new)
-              <li>[plugin] FontStorage (renamed from Web Font)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2209" target="_blank">Differ</a> (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2207" target="_blank">Markdown Editing</a> (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2206" target="_blank">Colored Indent</a> (new)
-              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2201" target="_blank">Password Generator</a> (new)
-              <li>[treehelper] reStructuredText, Textile (new)
-              <li>[plugin] CudaExt (added command "Symbols list")
-              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2196" target="_blank">AutoIt Helper</a> (upd, plugin now gives IntelliSense for AutoIt)
-              <li>[plugin] <a href="https://github.com/mtxr/CudaText-SQLTools/blob/master/README.md" target="_blank">SQL Tools</a> (upd)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2173" target="_blank">Draw Lines</a> (new)
-              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2171" target="_blank">Uncrustify Format</a> (new)
-              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2161" target="_blank">Auto Center Line</a> (new)
-              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2137" target="_blank">Auto Replace</a> (new)
             </ul>
             <b>Latest lexers updates</b>
             <ul>
+              <li>[lexer] HTML Ruby-ERB (new)
+              <li>[lexer] STAR, Self-defining Text Archive and Retrieval (new)
               <li>[lexer] Nix (new)
-              <li>[lexer] Sass, SCSS (upd)
-              <li>[lexer] CoffeeScript, LESS, YAML (upd)
-              <li>[lexer] TypeScript, C# (upd)
-              <li>[lexer] Assembly Motorola 68k (new)
-              <li>[lexer] Assembly NASM (new)
-              <li>[lexer] Assembly MASM, RON, JQ, Logstash DSL, TAGML (new)
             </ul>
         </div>
       </div>
