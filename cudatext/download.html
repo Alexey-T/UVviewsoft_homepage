@@ -45,19 +45,22 @@
           
           <table style="border-collapse: collapse; border-style: none; width: 380px;" >
               <tr>
-                  <td><li>Windows</td>  <td>x86, x64</td>                 <td>1.81.0 (2019/05)</td>
+                  <td><li>Windows</td>  <td>x86, x64</td>                 <td>1.83.1 (2019/06)</td>
               </tr>
               <tr>
-                  <td><li>Linux</td>  <td>x86, x64, ARM (gtk2, qt4)</td>  <td>1.81.0 (2019/05)</td>
+                  <td><li>Linux</td>  <td>x86, x64, arm, aarch64</td>     <td>1.83.1 (2019/06)</td>
               </tr>
               <tr>
-                  <td><li>macOS</td>   <td></td>                          <td>1.81.0 (2019/05)</td>
+                  <td><li>macOS</td>   <td></td>                          <td>1.83.1 (2019/06)</td>
               </tr>
               <tr>
-                  <td><li>FreeBSD</td>  <td>x86, x64 (gtk2)</td>          <td>1.81.0 (2019/05)</td>
+                  <td><li>FreeBSD</td>  <td>x86, x64</td>                 <td>1.83.1 (2019/06)</td>
               </tr>
               <tr>
-                  <td><li>Solaris</td>  <td>x64 (gtk2)</td>               <td>1.81.0 (2019/05)</td>
+                  <td><li>NetBSD</td>  <td>x64</td>                       <td>1.83.1 (2019/06)</td>
+              </tr>
+              <tr>
+                  <td><li>Solaris</td>  <td>x64</td>                      <td>1.83.1 (2019/06)</td>
               </tr>
           </table>
           
@@ -68,8 +71,8 @@
               <b>Platform-specific notes</b>
               <ul>
               <li>Windows: Python engine is included.
-              <li>macOS: Python engine is not included. To use plugins, you must install Python 3.x from official <a href="http://www.python.org" target=_blank>python.org</a>.
-              <li>Linux, FreeBSD, Solaris: Python engine is not included. To use plugins, see instruction inside "default.json" config about "pylib".<br>
+              <li>macOS: Python engine is not included. To use plugins, you must install Python 3.x from official <b>python.org</b>.
+              <li>other Unix'es: Python engine is not included. To use plugins, see instruction inside "default.json" config about "pylib".<br>
               For Debian/Ubuntu, you need .deb package, it adds CudaText shortcut to the Applications list, and adds "cudatext" to system path. For others, get .xz package, unpack it to ~/CudaText, and create shortcut by hands.
             </td>
           </table>
@@ -78,25 +81,28 @@
           <p>
             <b>Latest add-ons updates</b>
             <ul>
-              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2247" target="_blank">HTML Live Preview (Windows only)</a> (new)
+              <li>[linters] Perl; Python using MyPy; CoffeeScript using coffee-jshint; Puppet using puppet; Puppet using puppet-lint; Erlang
+              <li>[plugin] Fountain Helper (upd, added preview in browser)
+              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2258" target="_blank">File Type Profile</a> (new)
+              <li>[linter] PowerShell (new)
+              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2253" target="_blank">CSS Property Info</a> (new)
+              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2252" target="_blank">Color Picker</a> (upd)
+              <li>[toolbar themes] Liquid, Aero, Cyan (new)
+              <li>[translation] nl_NL (new)
+              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2247" target="_blank">HTML Live Preview (Windows+Unix)</a> (new)
               <li>[plugin] Show Unicode Name (new)
               <li>[plugin] VBScript Format (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2240" target="_blank">JS Format, JSON Stringify, CSS/SCSS/SASS/LESS Format</a> (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2234" target="_blank">IP Address Helper</a> (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2227" target="_blank">Remove Greek Accents</a> (new)
-              <li>[icons] project toolbar icons Axialis (new)
-              <li>[icons] updated all Google and Axialis icon themes (upd)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2220" target="_blank">EditorConfig</a> (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2218" target="_blank">CSS Inspector</a> (new)
-              <li>[syntax-theme] NightOwl (new)
-              <li>[syntax-theme] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2215" target="_blank">Alabaster</a> (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2209" target="_blank">Differ</a> (new)
               <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2207" target="_blank">Markdown Editing</a> (new)
-              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2206" target="_blank">Colored Indent</a> (new)
-              <li>[plugin] <a href="http://synwrite.sourceforge.net/forums/viewtopic.php?f=19&t=2173" target="_blank">Draw Lines</a> (new)
             </ul>
             <b>Latest lexers updates</b>
             <ul>
+              <li>[lexer] Assembly Z80 RGBDS (new)
               <li>[lexer] HTML Ruby-ERB (new)
               <li>[lexer] STAR, Self-defining Text Archive and Retrieval (new)
               <li>[lexer] Nix (new)

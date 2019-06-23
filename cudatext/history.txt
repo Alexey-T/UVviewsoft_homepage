@@ -3,6 +3,48 @@
   - fixed
   * changed
 
+1.83.1 (2019/06)
+
++ add: Find dialog: option "find_hotkey_op_tokens", hotkey for 'syntax elements'
++ add: Find dialog: 'syntax elements' has checkable style
+- fix: plugin "Insert Time" bug
+
+1.83.0 (2019/06)
+
++ add: dialog Find/Replace has option button to choose "syntax elements" (like SynWrite): any, only comments, only strings, only comments+strings, except comments, except strings, except comments+strings
++ add: embedded Emmet engine (written by Rickard Johansson); preinstalled plugin Emmet which uses this engine (old plugin "Emmet Lite" is now almost not needed, remove it).
++ add: sidebar shows "badges" with number of items in Output and Validate panels
++ add: ui-theme colors for sidebar "badges"
++ add: plugin "Insert Time": if text selected, replace it on insertion
+* change: menu items in "Options / Settings-more" moved one level up
+
+1.82.0 (2019/06)
+
++ add: Ctrl+Tab shows new dialog, which cycles through tabs in recently used order; it's controlled by new option "ui_tab_switcher_dialog"
++ add: Emojis are rendered better
++ add: Windows: place IME window near caret, close IME window on click in text
++ add: Windows: system log off is handled (current session is saved)
++ add: command "switch tab, to next"
++ add: command "switch tab, to previous"
++ add: command "switch tab, simply to next"
++ add: command "switch tab, simply to previous"
++ add: command "switch tab, dialog"
++ add: command "switch tab, to recent"
+- fix: High-DPI on Linux
+- fix: focused groups 2..6 were not detected for statusbar/title update
+- fix: Ctrl+Tab didn't work in floating groups
+
+1.81.2 (2019/05)
+
++ add: command "open file, in text viewer"
++ add: command "open file, in hex viewer"
++ add: command "open file, in unicode viewer"
+* change: replaced option "ui_max_lines_codetree" to "ui_max_ranges_codetree" (which is more accurate limit)
+- fix: multi-selection by mouse was broken in last few releases
+- fix: very slow unfold action in huge files
+- fix: block staples can paint incorrectly in huge files
+- fix: changed tab's title can sometimes show without "*" mark
+- fix: Find dialog: popup position with Alt+Down
 
 1.81.0 (2019/05)
 
