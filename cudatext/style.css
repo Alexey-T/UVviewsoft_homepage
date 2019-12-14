@@ -1,0 +1,135 @@
+body {
+	font-family: "Segoe UI";
+	background-image: linear-gradient(160deg, #290B36 10%, #043453 80%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: 16px;
+}
+
+.head {
+	margin: 0px auto 0px auto;
+	width: 900px;
+	margin-bottom: 25px;
+	color: #fff;
+}
+
+.content {
+	margin: 0px auto 0px auto;
+	width: 1026px;
+}
+
+.slide {
+	margin: 0px auto 0px auto;
+	width: 900px;
+}
+
+.foot {
+	margin: 0px auto 0px auto;
+	width: 1026px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+}
+
+.foot a {
+	color: #ff742a;
+	text-decoration: none;
+}
+
+.foot a:hover {
+	color: #fdac81;
+}
+
+.textbox {
+	margin: 0px auto 0px auto;
+	width: 880px;
+	background-color: rgba(255, 255, 255, 0.13);
+	border-width: 1px;
+	border-color: rgba(114, 114, 114, 0.39);
+	border-style: solid;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: inset 0px 0px 70px 16px rgba(65, 65, 65, 0);
+	transition: background 0.6s linear;
+	color: #fff;
+	text-align: justify;
+}
+
+.textbox a:link {
+	text-decoration: none;
+	color: #ff742a;
+}
+
+.textbox a:visited {
+	text-decoration: none;
+	color: #ff742a;
+}
+
+.textbox a:hover {
+	text-decoration: none;
+	color: #fdac81;
+}
+
+.menu {
+	width: 900px;
+	margin: 0px auto 0px auto;
+	margin-top: 25px;
+	text-align: right;
+}
+
+.menu a:link {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff;
+	margin-left: 15px;
+	transition: color 0.6s linear;
+}
+
+.menu a:visited {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff;
+	margin-left: 15px;
+	transition: color 0.6s linear;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: normal;
+	color: #ff742a;
+	margin-left: 15px;
+	transition: color 0.6s linear;
+}
+
+.menu ul li {
+	list-style: none;
+	margin: 0px;
+	display: inline;
+}
+
+.sitename h1 {
+	margin: 0px;
+	border: 0px;
+	font-size: 40px;
+	text-transform: none;
+	display: block;
+}
+
+.sitename h1 span {
+	color: #ff742a;
+}
+
+.sitename h2 {
+	float: left;
+	margin: 0px;
+	border: 0px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.fotorama__caption__wrap {
+	text-align: center;
+}
