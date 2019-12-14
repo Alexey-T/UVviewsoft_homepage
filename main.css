@@ -1,30 +1,176 @@
-body {
-  background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
+html {
+    height: 100%;
 }
 
-a img {border: none; }
+body {
+    font-family: "Segoe UI";
+    background-image: linear-gradient(160deg, #290B36 10%, #043453 80%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a img {
+    border: none;
+}
 
 table tbody tr td a {
-  display: block;
-  text-decoration:none;
+    display: block;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fff;
 }
 
 .rounded {
-  padding-top: 8px;
-  padding-bottom: 15px;
-  margin: 0 auto 20px auto;
-  background: #eeeeee;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  color: #707070;
-  }
-  
+    padding-top: 8px;
+    padding-bottom: 15px;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #707070;
+}
+
 .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+
+.product {
+    float: left;
+    text-align: center;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.13);
+    margin-left: 20px;
+    border-width: 1px;
+    border-color: #404040;
+    border-style: solid;
+    border-radius: 10px;
+    min-height: 150px;
+    padding: 15px;
+    box-shadow: inset 0px 0px 70px 16px rgba(255, 255, 255, 0.18);
+    transition: background 0.6s linear;
+    color: #fff;
+
+}
+
+.product a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.product:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 0px 70px 16px rgba(255, 255, 255, 0.18);
+    transition: background 0.6s linear;
+    cursor: pointer;
+}
+
+
+
+.content {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1026px;
+    min-height: 250px;
+    display: block;
+}
+
+.head {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1026px;
+    height: 150px;
+    color: #fff;
+    display: block;
+}
+
+.logo {
+    float: left;
+    height: 150px;
+    min-width: 180px;
+    max-width: 250px;
+}
+
+.sitename {
+    height: 150px;
+    font-size: 50px;
+}
+
+.available {
+    margin-top: 21px;
+    text-align: left;
+
+}
+
+.available span {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.product span {
+    display: block;
+}
+
+
+.available img {
+    border-width: 1px;
+    border-color: #989898;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.foot {
+    display: block;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1026px;
+}
+
+.bottomlnk {
+    padding-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 300px;
+    text-align: center;
+
+}
+
+
+
+.bottomlnk a:link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+}
+
+.bottomlnk ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bottomlnk a:hover {
+    text-decoration: underline;
+    color: #fff;
+    display: block;
+}
+
+.bottomlnk span {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    font-size: 19px;
 }
