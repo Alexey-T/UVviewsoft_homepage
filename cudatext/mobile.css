@@ -1,69 +1,45 @@
 @media (min-width: 320px) and (max-width: 991px) {
-  #body {
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-  #head {
-    padding-left: 0;
-    text-align: center;
-  }
-  #menu {
-    text-align: center;
-  }
-  #menu a {
-    margin: 0;
-    padding: 5px;
-    display: inline-block;
-  }
-  .section br:first-child {
-    display: none;
-  }
-  .section ul {
-    padding-left: 0;
-  }
-  .section img {
-    width: 100%;
-    max-width: 440px;
-  }
-  .section table {
-    width: 100%;
-  }
-  .footer {
-    padding-bottom: 0 !important;
-    /* margin-top: 0; */
-    text-align: center;
-  }
-  p:first-child {
-    display: none;
-  }
-  table.rounded {
-    width: 100%;
-  }
-  table.rounded td {
-    width: 140px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: inline-block;
-    vertical-align: top;
-  }
-  table.rounded:nth-of-type(2) td:first-child {
-    display: none;
-  }
-  table.rounded:nth-of-type(2) td {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-  }
-  table.rounded:nth-of-type(2) a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  body {
-    position: relative;
-  }
-  div.footer {
-    padding-bottom: 5px;
-  }
+    body {
+        padding: 15px;
+        margin: 0;
+    }
+
+    body,
+    .head,
+    .menu,
+    .content,
+    .slide,
+    .textbox,
+    .foot {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .menu ul {
+        padding-left: 0;
+    }
+
+    .menu li {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+    }
+
+    .menu li a {
+        margin-left: 0 !important;
+    }
+
+    .sitename {
+        text-align: center;
+    }
+
+    .sitename h2 {
+        float: none;
+    }
+
+    .textbox,
+    .foot {
+        margin-top: 15px;
+    }
 }
