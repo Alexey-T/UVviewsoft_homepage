@@ -1,0 +1,48 @@
+<b>ATViewer</b> is a component which allows to view files of various types.
+There is no edit possibility, just quick view - so it's useful to implement "View file"
+feature in your Delphi/BCB application.
+The implemented view modes and corresponding file types are:
+
+<ul>
+<li> <b>Text, Binary, Hex, Unicode</b>: all files, of unlimited size.<br>
+  Plain file dump is shown. Used <a href="atbinhex.htm">ATBinHex</a> component: only visible part of file is loaded into memory.
+  Modes are suitable for large files or files of unknown type.
+<li> <b>RTF, UTF-8</b>: RTF and UTF-8 encoded texts.<br>
+  File is shown using RichEdit control.
+<li> <b>Image</b>: all general image formats: BMP, JPG, ICO, GIF, PNG, WMF, TGA etc.<br>
+  File is shown using <a href="atimagebox.htm">ATImageBox</a> component.
+<li> <b>Multimedia</b>: all file types supported by <i>MS Windows Media Player</i>: AVI, MPEG, WMV, MP3 etc.<br>
+  File is shown using Windows Media Player ActiveX control.
+<li> <b>Internet</b>: all file types supported by <i>MS Internet Explorer</i>: HTML, XML, DOC, XLS etc.<br>
+  File is shown using Internet Explorer ActiveX control.
+<li> <b>Plugins</b>: all file types supported by
+  <i>Total Commander Lister</i> (WLX) plugins.
+</ul>
+
+<p>
+Here are screenshots of various view modes, when appropriate file type is loaded in each mode:
+
+<center>
+<p> <img src="img/ATBinHex_Text.gif" class="shot" alt=""><br> <i>Text</i>
+<p> <img src="img/ATBinHex_Binary.gif" class="shot" alt=""><br> <i>Binary</i>
+<p> <img src="img/ATBinHex_Hex.gif" class="shot" alt=""><br> <i>Hex</i>
+<p> <img src="img/ATBinHex_Unicode.gif" class="shot" alt=""><br> <i>Unicode</i>
+<p> <img src="img/ATBinHex_UHex.gif" class="shot" alt=""><br> <i>Combined Unicode/Hex</i>
+<p> <img src="img/ATViewer_RTF.gif" class="shot" alt=""><br> <i>RTF/UTF-8</i>
+<p> <img src="img/ATViewer_Image.gif" class="shot" alt=""><br> <i>Image</i>
+<p> <img src="img/ATViewer_Media.gif" class="shot" alt=""><br> <i>Multimedia</i>
+<p> <img src="img/ATViewer_Web.gif" class="shot" alt=""><br> <i>Internet</i>
+<p> <img src="img/ATViewer_Plugins.gif" class="shot" alt=""><br> <i>Lister plugins (ICLView plugin is shown)</i>
+</center>
+
+<p>
+Several screenshots from demo applications:
+<center>
+<p>
+<a href="ATViewer_Demo1.gif" target="_blank"><img src="img/ATViewer_Demo1_sm.gif" class="shot" alt="Click for full-sized image" title="Click for full-sized image"></a><br>
+<i>Screenshot of Universal Viewer application</i>
+
+<p>
+<a href="ATViewer_Demo2.gif" target="_blank"><img src="img/ATViewer_Demo2_sm.gif" class="shot" alt="Click for full-sized image" title="Click for full-sized image"></a><br>
+<i>Screenshot of file browser application</i>
+</center>

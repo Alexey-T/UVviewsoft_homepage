@@ -1,0 +1,44 @@
+@media (min-width: 320px) and (max-width: 991px) {
+  #body {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  #head {
+    padding-left: 60px;
+    background-position: 0 3px;
+  }
+  #menu {
+    text-align: center;
+  }
+  #menu a {
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+  }
+  .section ul {
+    padding-left: 0;
+  }
+  .footer {
+    text-align: center;
+  }
+  #content table,
+  #content td {
+    width: 100%;
+    text-align: center;
+  }
+  #content td {
+    display: block;
+  }
+  .ar {
+    margin-top: 0;
+    padding-left: 0;
+    text-align: left;
+  }
+  .ar ul {
+    padding-left: 15px;
+  }
+  #content br:first-child {
+    display: none;
+  }
+}

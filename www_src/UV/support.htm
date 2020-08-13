@@ -1,0 +1,31 @@
+<script language=javascript>
+<!--
+function px(addr)
+{
+  for (I=0;I<addr.length;I++)
+    if (addr.charAt(I)=='z' && I+1<addr.length && addr.charAt(I+1)=='y') I++
+    else document.write(addr.charAt(I));
+}
+
+function mx(addr,text)
+{
+  document.write("<a href=\"mailto:"); px(addr); document.write("\">"); px(text); document.write("<\a>");
+}
+//-->
+</script>
+
+
+Technical support can be received via e-mail:
+<script language=javascript><!--
+mx("support@uvviewsoftzy.com?Subject=Universal%20Viewer","support@uvviewsoftzy.com");
+--></script>
+<noscript>(turn on Javascript to see e-mail)</noscript>.
+Please include "Universal Viewer" into message subject to indicate it's not a spam.
+Use English or Russian please.
+
+<p>
+Note:
+The author cannot resolve some issues with Lister plugins,
+just because they are developed by 3rd parties.
+There are some known issues with Lister plugins
+<a href="http://www.ghisler.ch/wiki/index.php/ATViewer:_issues_with_WLX_plugins" target="_blank">listed at this page</a>.
