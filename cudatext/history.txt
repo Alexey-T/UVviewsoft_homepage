@@ -3,18 +3,31 @@
   - fixed
   * changed
 
-1.110.3 (2020/08)
+1.111.0 (2020/09)
 
 + add: improved TRegExpr engine:
+    + regexp: supported recursion: (?R) with alias (?0)
+    + regexp: supported subroutine calls: (?1) ... (?89)
+    + regexp: supported possessive quantifier: a++ a*+ a?+ a{n,m}+
+    + regexp: supported atomic groups: (?>foo|bar|ok)
+    + regexp: supported negative lookahead: foo(?!bar)
+    + regexp: supported Perl syntax for named groups: (?'name'expr) and subroutine calls: (?&name)
     + regexp: supported Unicode characters after U+FFFF (ie surrogate pairs) for '.', '\W', '\S', '\D' etc.
-    + regexp: supported "atomic groups": (?>foo|bar|ok)
-    + regexp: supported "nagative lookahead": foo(?!bar)
-- fix: lexer Python: regression in code-tree (thanks @OlehL)
+    + regexp: added \z; changed behavior of \Z (match also before final line-break)
+    + regexp: added error message for unknown metachars (like \X \E)
+
++ add: option "ui_reopen_session_cmdline" (thanks @notteumani)
++ add: before: editor doesn't load last session when command-line file is opened; now: it also doesn't save current session in this case, so old session is not lost (thanks @notteumani)
++ add: lexer C++: keywords of C++20
+- fix: issue with "Add next occurrence of selected word" (thanks @Jairo-Martinez)
+- fix: engine of lite lexers: broken highlighting after horizontal scrolling (thanks @skarasov)
+- fix: lexer Python: code-tree for func "def name(param: type)" (thanks @skarasov)
+- fix: lexer Python: code-tree for "class name(dotted.name)" (thanks @OlehL)
 - fix: regression in Markdown tree-helper (thanks @kvichans)
 
 1.110.0 (2020/08)
 
-+ add: improved TRegExpr engine: supported Unicode categories \pL \p{L} \p{Lu}, and negative variant with \P. List of available categories: https://www.compart.com/en/unicode/category/ 
++ add: improved TRegExpr engine: supported Unicode categories \pL \p{L} \p{Lu}, and negative variant with \P. List of available categories: https://www.compart.com/en/unicode/category/
 + add: option "renderer_offsets", to fix rarely visible artifacts on Linux (thanks @VicDobrov)
 + add: lexer reStructuredText: fix 2 kinds of code-blocks; add rule for table blocks; add rule for local links
 + add: lexer Bash: highlight invalid hex/octal literals (thanks @VicDobrov)
