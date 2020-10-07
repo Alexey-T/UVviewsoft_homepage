@@ -3,6 +3,12 @@
   - fixed
   * changed
 
+1.114.1 (2020/10)
+
++ add: Undo/Redo handles markers too (format of "persistent undo" files is extended, but it's backward compatible)
++ add: session also holds markers; this can be disabled by new char in the option "ui_history_disabled"
+- fix: cannot scroll to the left by mouse selection; now it works if cursor is on bookmark column or folding column (thanks @MrPiccad)
+
 1.114.0 (2020/10)
 
 + add: CSS auto-completion:
@@ -10,7 +16,7 @@
     b) added completion for CSS @-rules and pseudo-elements beginning with ":" and "::" (thanks @d-mal)
     c) don't suggest CSS props/values outside of {} brackets
 + add: all auto-completions are disabled if caret is inside comments
-* change: before, "Save" command was ignored if called on unmodified file. It confused users, when file was modified by external program, and was not like in ST3. To change it, added option "ui_allow_save_always" with changed default. (thanks @gh_origin, @tmsg)
+* change: before, "Save" command was ignored if called on unmodified file. It confused users, when file was modified by external program, and was not like in ST3. To change it, added option "ui_save_always" with changed default. (thanks @gh_origin, @tmsg)
 * change: Find dialog: action buttons are aligned to the right
 * change: several options "find_show_nnnn" replaced with single string option "find_hidden_buttons"; more buttons can be hidden now
 + add: don't treat ASCII chars "end of file" and "form feed" as non-text
