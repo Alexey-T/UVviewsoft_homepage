@@ -3,6 +3,30 @@
   - fixed
   * changed
 
+1.116.0 (2020/10)
+
++ add: Find dialog: when "search in selection" is checked, and "find first"/"find next" is called, editor places marker instead of caret, so we don't break the selection, and can "find next" all matches (thanks @xcme)
++ add: Wiki topic https://wiki.freepascal.org/CudaText#Text_searcher_features
++ add: Wiki topic https://wiki.freepascal.org/CudaText#How_to_support_Spell_Checker_in_lexer
++ add: plugin "Sort" has new command "Sort char-separated values in lines"
++ add: option "marker_size"
++ add: command "duplicate line(s)" supports multi-carets
++ add: command-line options -nsl and -nss (option -ns is a shortcut to both of them) (thanks @tmsg)
++ add: command-line option -z=uhex
++ add: CSS auto-completion: more complete colors list for color-properties (thanks @d-mal)
++ add: CSS auto-completion: add standard values to all properties: inherit, initial, unsert, var() (thanks @d-mal)
++ add: CSS auto-completion: better auto-inserting of bracket for functions
++ add: Unix: better support paths with ~/ (didn't work if app was run by external tools)
++ add: dialog Find/Replace: second press of Ctrl+F / Ctrl+R returns focus to editor (thanks @xcme)
++ add: dialog "Save tabs?" shows button "don't save/ keep in session" more often, now ignoring "t" in "ui_history_disabled" (thanks @tmsg)
++ add: lexer CSS: highlight names of "system colors" (thanks @d-mal)
++ add: lexer XML: better support Spell Checker (thanks @EcherArt)
+- fix: crash and not sync'ed editors when in splitted view (thanks @xcme)
+- fix: code-tree was reset on change grouping mode to "1+2" (thanks @Jairo-Martinez)
+- fix: "distraction-free mode" was partially reset: by Option Editor plugin call, by lexer changing
+- fix: some plugins crashed when app was run with -s= command-line param
+- fix: flags in "View / Toggle unprinted chars" were reset on switching tabs (thanks @xcme)
+
 1.115.0 (2020/10)
 
 + add: HTML auto-completion works also inside 1) A HREF="...", 2) LINK HREF="...", 3) IMG/SCRIPT/INPUT/FRAME/IFRAME/AUDIO/VIDEO/SOURCE SRC="..."; it shows there folder names and file names with appropriate types (depends on tag)
