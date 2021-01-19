@@ -3,6 +3,12 @@
   - fixed
   * changed
 
+1.122.3 (2021/01)
+
++ add: added option "undo_max_carets" (default is 200); many editing commands (typing character, BackSp, Delete, etc) are now much faster for >200 carets (before, such commands could last for several minutes, with 30K carets)
++ add: lexer CSS: more known properties; fix highlighting inside @media blocks
+- fix: Lexer Detecter didn't detect 'Dockerfile'
+
 1.122.1 (2021/01)
 
 + add: option "autocomplete_commit_single_item" (thanks @MiroslavMatas)
