@@ -207,9 +207,11 @@
   </tr>
   <tr>
     <td class="text" align="center">
-      Copyright &copy; UVviewsoft <br>
+      Copyright &copy; UVviewsoft 
+      <br>
+      We use <a href="https://www.trichview.com/" title="RichView" target="_blank">TRichView component</a>
+      <br>
       <a href="privacy.htm">Privacy Policy</a>
-      <!--<a href="lic.htm">License</a>-->
     </td>
   </tr>
 
