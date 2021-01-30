@@ -3,6 +3,25 @@
   - fixed
   * changed
 
+1.123.0 (2021/01)
+
++ add: support HTML color-codes highlighting in text background, option "underline_color_size" needs special value for this (thanks @pagewerk)
++ add: Wiki topic https://wiki.freepascal.org/CudaText#HTML_color_codes_underlining
++ add: Wiki topic https://wiki.freepascal.org/CudaText#Automatic_folding_of_comments
++ add: Wiki topic https://wiki.freepascal.org/CudaText#Show_pictures_in_the_text
++ add: commands 'type a char'/'backspace'/'delete'/'undo'/'redo'/'left'/'right', when with multi-carets, should not scroll to first(last) caret (thanks @Jairo-Martinez)
++ add: commands 'indent selection'/'unindent selection' now support multi-carets
++ add: auto scale 'margin lines' width (thanks @Shovel)
++ add: Project Manager: big speed up of "Go to file" with ~1000 files (thanks @dopm)
++ add: dialogs "Themes", "Color theme" are now resizable; dialog "Themes" is now scalable (thanks @Lastique)
+- fix: Qt5 version: plugin dialogs flickering (thanks @Lastique)
+- fix: Windows XP: themed menu font size was incorrect (thanks @zanud)
+- fix: regression with restoring "index of top line" from session, with word-wrap and w/o it (thanks @Jairo-Martinez)
+- fix: regression with commands "left"/"right" not scrolling to caret (thanks @Jairo-Martinez)
+- fix: regression with bad positioning of tab-groups 'splitters' on start (thanks @GHNewbiee)
+- fix: option "saving_trim_spaces" didn't move caret to shorter line end (thanks @GHNewbiee)
+- fix: 'preview tab' could not work if dragged to another tab-group
+
 1.122.5 (2021/01)
 
 * change: added option "undo_max_carets" (default is 5000). Many editing commands are now much faster for >5000 carets (before, such commands could last for several minutes, with 30K carets). WARNING: this clears the undo-information when you have >5000 carets.
@@ -22,7 +41,7 @@
 
 1.122.0 (2021/01)
 
-* add/change: Addon Manager: removed command "Re-install...", now all addons are in the "Install..."; already installed items are marked with "◄local ?►", and items with updates are marked with "◄local ?, web ?►" (thanks @cser, @kvichans) 
+* add/change: Addon Manager: removed command "Re-install...", now all addons are in the "Install..."; already installed items are marked with "◄local ?►", and items with updates are marked with "◄local ?, web ?►" (thanks @cser, @kvichans)
 + add: hide caret for unfocused editor controls (very old issue; thanks @OlehL)
 + add: option "auto_fold_comments", it automatically creates folding-ranges for many commented lines (thanks @Jairo-Martinez for tests)
 * change: deleted settings "fold commented lines" from standard lexers (C, Lua, PHP, Python), to better support "auto_fold_comments"
@@ -101,7 +120,7 @@
 + add: option "auto_delete_bookmarks" (thanks @Jairo-Martinez)
 + add: lexer C++: fixes for code-tree
 - fix: fixes for standard plugins' translation (patch by Markus)
-- fix: dragging of sel-rect in minimap stopped when mouse goes lefter/righter of minimap 
+- fix: dragging of sel-rect in minimap stopped when mouse goes lefter/righter of minimap
 - fix: on deleting block with n bookmarks, bookmarks shifted upper too much
 
 1.117.0 (2020/10)
