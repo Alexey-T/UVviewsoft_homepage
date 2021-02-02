@@ -3,6 +3,14 @@
   - fixed
   * changed
 
+1.123.2 (2021/02)
+
++ add: API allows much more access to Console panel fields (thanks @Shovel) 
++ add: allow multi-selections to touch, without joining them (thanks @Jairo-Martinez, @cser)
++ add: lexer Batch: highlight `tick_blocks`; highlight variables with chars ~.,()
+* change: program will not save to session filenames from CudaText: "settings/history.json", "settings/history session.json"
+- fix: Markdown tree-helper must skip headers inside <pre>..</pre>
+
 1.123.0 (2021/01)
 
 + add: support HTML color-codes highlighting in text background, option "underline_color_size" needs special value for this (thanks @pagewerk)
