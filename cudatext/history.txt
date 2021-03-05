@@ -3,12 +3,17 @@
   - fixed
   * changed
 
-1.127.3 (2021/03)
 
-+ add: updated app icon: fixed colors, removed 3D effect (by @Shovel)
+1.128.0 (2021/03)
+
++ add: load lexers using multi-threading, this improved loading speed by 15-20%
++ add: update app icon (by @Shovel)
++ add: option "key_up_down_allow_edge" (thanks @kvichans)
++ add: UI-tabs: paint < > scroll arrows dimmed, when no scrolling is needed (thanks @d7_2_laz)
 + add: clicking on editor's scrollbar puts focus to editor (thanks @GHNewbiee)
 + add: tab title "UntitledN" counter is reset after tabs are closed, and only 1 tab is left (thanks @GHNewbiee) 
 + add: save/restore history scroll-position for 2nd part of splitted UI-tab (thanks @GHNewbiee)
+- fix: sometimes, arrows up/down over tab-char could restore previous column wrong (thanks @tiun)
 - fix: issue with painting of 'ghost caret' on typing/deleting text (thanks @quesada)
 - fix: render UI-tab rounded corners for all tab positions: top/bottom/left/right
 
