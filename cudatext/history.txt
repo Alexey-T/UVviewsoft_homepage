@@ -3,11 +3,19 @@
   - fixed
   * changed
 
+1.129.0 (2021/03)
+
++ add: handle config JSON files with UTF-8 BOM (patch goes to FreePascal as well)
++ add: better logic of brackets auto-closing (and selection surrounding) for case of multi-carets (thanks @xcme)
++ add: command "Install from GitHub" / "Download as zip" supports all branch names (thanks @Shovel) 
+* change: paint end-of-line text marks ("LF", "CRLF", "CR", "EOF") by lines, not by font
+- fix: crash in last change in "Help / Check for updates"
+
 1.128.5 (2021/03)
 
 * change: for CSS auto-completion, use another provider of CSS names/properties, now it's cudax_css.py module
 * change: auto-completion for CSS and HTML was 70% rewritten, pls report any issues
-+ add: better logic of skipping brackets: skip ')' in case 'f(|)' but don't skip in case 'f(text|)` (thanks @xcme)
++ add: better logic of skipping brackets on typing: skip ')' in case 'f(|)' but don't skip in case 'f(text|)' (thanks @xcme)
 + add: option "auto_close_brackets" supports more chars: ~ * # <
 + add: detect Debian/Ubuntu to download deb-file in "Help / Check for updates" (thanks @ildarkhasanshin)
 + add: API to show "masked password" editor fields and "numbers only" editor fields (thanks @Shovel)
@@ -23,7 +31,7 @@
 + add: option "key_up_down_allow_edge" (thanks @kvichans)
 + add: UI-tabs: paint < > scroll arrows dimmed, when no scrolling is needed (thanks @d7_2_laz)
 + add: clicking on editor's scrollbar puts focus to editor (thanks @GHNewbiee)
-+ add: tab title "UntitledN" counter is reset after tabs are closed, and only 1 tab is left (thanks @GHNewbiee) 
++ add: tab title "UntitledN" counter is reset after tabs are closed, and only 1 tab is left (thanks @GHNewbiee)
 + add: save/restore history scroll-position for 2nd part of splitted UI-tab (thanks @GHNewbiee)
 - fix: sometimes, arrows up/down over tab-char could restore previous column wrong (thanks @tiun)
 - fix: issue with painting of 'ghost caret' on typing/deleting text (thanks @quesada)
@@ -41,7 +49,7 @@
 - fix: some pixel artifacts on 'flat' UI-tabs (thanks @JairoMartinezA)
 - fix: error when PHP auto-completion is called after e.g. "0~" (thanks @Shovel)
 - fix: regression, option "renderer_offsets" was ignored
-- fix: coloring of code-blocks in e.g. reST lexer 
+- fix: coloring of code-blocks in e.g. reST lexer
 
 1.126.4 (2021/02)
 
@@ -62,7 +70,7 @@
 + add: Addon Manager: auto-install CudaLint/CudaFormatter when a linter/formatter is installing
 + add: lexer PHP: support attributes of PHP 8: #[Name]
 - fix: keys Up/Down, with selection overlapping editor border, caused wrong horizontal scrolling
-- fix: bug in detecting lexers 'PKGBUILD', 'Dockerfile' (thanks @Nori13) 
+- fix: bug in detecting lexers 'PKGBUILD', 'Dockerfile' (thanks @Nori13)
 
 1.125.0 (2021/02)
 
