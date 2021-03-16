@@ -130,6 +130,10 @@ body {
 	font-weight: 500;
 }
 
+.fotorama {
+	margin-bottom: 30px;
+}
+
 .fotorama__caption__wrap {
 	text-align: center;
 }
